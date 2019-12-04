@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/frontend/new2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575441343715</updated>
-      <workItem from="1575441346062" duration="1183000" />
+      <workItem from="1575441346062" duration="2962000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -97,28 +97,93 @@
       <option name="project" value="LOCAL" />
       <updated>1575442270283</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Component directory created">
+      <created>1575442538467</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575442538467</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Component directory created">
+      <created>1575442676396</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575442676396</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Component directory created">
+      <created>1575442685773</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575442685773</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Frontend directory deleted">
+      <created>1575442713606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575442713606</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/navanjane/WebstormProjects/librarymanagement/src" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Component directory created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Component directory created" />
+    <MESSAGE value="Frontend directory deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frontend directory deleted" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575442685662">
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575442713517">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575442685662" />
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575442713517" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="476" y="274" key="Github.ShareDialog/47.27.1319.741@47.27.1319.741" timestamp="1575441896660" />
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575442690793">
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575442715296">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575442690793" />
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575442715296" />
   </component>
 </project>
