@@ -1,0 +1,38 @@
+header{
+    height: 20%;
+}
+.home{
+    height: 600px;
+}
+
+body{
+    background-color: grey;
+}
+footer{
+    height: 20%;
+    text-align: center;
+    background-color: black;
+}
+#h{
+    height: 100px;
+}
+
+.box{
+    height: 310px;
+    width: 450px;
+    background-color: black;
+    margin: 60px auto;
+    opacity: .8;
+    color: white;
+}
+#t1{
+    text-align: center;
+    font-size: 35px;
+}
+#t2{
+    text-align: center;
+    font-size: 25px;
+}
+.navbar{
+    padding: 0px;
+}
