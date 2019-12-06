@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from  'react-router-dom'
 
 function Login() {
     return(
@@ -16,10 +17,10 @@ function Login() {
                 </div>
                 <div className="clearfix">
                     <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
-                    <a href="#" className="pull-right">Forgot Password?</a>
+                    <Link href="#" className="pull-right">Forgot Password?</Link>
                 </div>
             </form>
-            <p className="text-center"><a href="#">Create an Account</a></p>
+            <p className="text-center"><Link href="#">Create an Account</Link></p>
         </div>
     )
 
