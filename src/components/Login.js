@@ -6,7 +6,7 @@ import {Link} from  'react-router-dom'
 function Login() {
     return(
         <div className="login-form">
-            <form action="/examples/actions/confirmation.php" method="post">
+            <form>
                 <h2 className="text-center">Log in</h2>
                 <div className="form-group">
                     <input type="text" className="form-control" placeholder="Student ID" required="required"/>
@@ -21,8 +21,9 @@ function Login() {
                     <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
                     <Link to={"/student_registration"} className="pull-right">Forgot Password?</Link>
                 </div>
+                <Link to="/student_signup" className={"pull-right"}>Create an Account</Link>
             </form>
-            <p className="text-center"><Link to="/Signup">Create an Account</Link></p>
+
         </div>
     )
 
