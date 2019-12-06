@@ -15,7 +15,7 @@ function Nav(){
                 <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                &nbsp
+                &nbsp; &nbsp; &nbsp;
                 <div className="collapse navbar-collapse" id="navbarCollapse">
 
                     <div className="navbar-nav">
