@@ -14,15 +14,15 @@ function Nav(){
 
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav">
-                    <a href="#" className="nav-item nav-link active">Home</a>
-                    <a href="#" className="nav-item nav-link">Books</a>
-                    <a href="#" className="nav-item nav-link"> AAAAAA </a>
-                    <a href="#" className="nav-item nav-link disabled" tabIndex="-1"> BBBB </a>
+                    <Link to={"/"} className="nav-item nav-link active"> Home </Link>
+                    <Link to="#" className="nav-item nav-link"> Books </Link>
+                    <Link to="#" className="nav-item nav-link"> AAAAAA </Link>
+                    <Link to={"#"} className="nav-item nav-link disabled" tabIndex="-1"> BBBB </Link>
                 </div>
                 <div className="navbar-nav ml-auto">
-                    <a href="#" className="nav-item nav-link"> Sign Up </a>
-                    <a href="#" className="nav-item nav-link"> Student Login </a>
-                    <a href="#" className="nav-item nav-link">Admin Login</a>
+                    <Link to={"#"} className="nav-item nav-link"> Sign Up </Link>
+                    <Link to={"/student_login"} className="nav-item nav-link"> Student Login </Link>
+                    <Link to={"/admin_login"} className="nav-item nav-link">Admin Login</Link>
                 </div>
 
 
