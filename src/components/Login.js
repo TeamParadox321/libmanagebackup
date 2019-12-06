@@ -17,7 +17,7 @@ function Login() {
                 </div>
                 <div className="clearfix">
                     <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
-                    <Link href="#" className="pull-right">Forgot Password?</Link>
+                    <Link to={"/student_registration"} className="pull-right">Forgot Password?</Link>
                 </div>
             </form>
             <p className="text-center"><Link href="#">Create an Account</Link></p>

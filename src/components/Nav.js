@@ -5,23 +5,23 @@ import Logo from "./uoklogo.png";
 function Nav(){
     return (
         <nav className="navb navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="#" className="navbar-brand">
+            <Link to={"/"} className="navbar-brand">
                 <img src={Logo} width={"45"} height={"45"} alt="CoolBrand" />
-            </a>
+            </Link>
             <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span className="navbar-toggler-icon"></span>
             </button>
 
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav">
-                    <h2 className={"header-text"}>Library Management System </h2>
+                    <Link to={"/"}> <h2 className={"header-text"}>Library Management System </h2> </Link>
                     <Link to={"/"} className="nav-item nav-link"> Home </Link>
-                    <Link to="#" className="nav-item nav-link"> Books </Link>
-                    <Link to="#" className="nav-item nav-link"> AAAAAA </Link>
-                    <Link to={"#"} className="nav-item nav-link disabled" tabIndex="-1"> BBBB </Link>
+                    <Link to="/" className="nav-item nav-link"> Books </Link>
+                    <Link to="/" className="nav-item nav-link"> AAAAAA </Link>
+                    <Link to={"/"} className="nav-item nav-link disabled" tabIndex="-1"> BBBB </Link>
                 </div>
                 <div className="navbar-nav ml-auto">
-                    <Link to={"#"} className="nav-item nav-link"> Sign Up </Link>
+                    <Link to={"/"} className="nav-item nav-link"> Sign Up </Link>
                     <Link to={"/student_login"} className="nav-item nav-link"> Student Login </Link>
                     <Link to={"/admin_login"} className="nav-item nav-link">Admin Login</Link>
                 </div>

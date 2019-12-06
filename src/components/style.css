@@ -27,14 +27,7 @@ footer{
 .section{
     height: 700px;
 }
-.box{
-    height: 310px;
-    width: 450px;
-    background-color: black;
-    margin: 60px auto;
-    opacity: .8;
-    color: white;
-}
+
 #t1{
     text-align: center;
     font-size: 35px;
@@ -68,4 +61,7 @@ footer{
 .btn {
     font-size: 15px;
     font-weight: bold;
+}
+.pull-righ{
+    text-align: right;
 }
