@@ -7,7 +7,7 @@ function Login() {
     return(
         <div className="login-form">
             <form>
-                <h2 className="text-center">Log in</h2>
+                <h2 className="text-center"> Student Log in</h2>
                 <div className="form-group">
                     <input type="text" className="form-control" placeholder="Student ID" required="required"/>
                 </div>
@@ -17,11 +17,15 @@ function Login() {
                 <div className="form-group">
                     <button type="submit" className="btn btn-primary btn-block">Log in</button>
                 </div>
-                <div className="clearfix">
-                    <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
-                    <Link to={"/student_registration"} className="pull-right">Forgot Password?</Link>
+                <div>
+                    <span className="clearfix">
+                        <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
+                        <Link to={"/student_registration"} className="pull-right">Forgot Password?</Link>
+                    </span>
+                    <span className={"pull-right"}>
+                        <Link to="/student_signup">Create an Account</Link>
+                    </span>
                 </div>
-                <Link to="/student_signup" className={"pull-right"}>Create an Account</Link>
             </form>
 
         </div>
