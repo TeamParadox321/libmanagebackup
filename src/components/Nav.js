@@ -25,7 +25,7 @@ function Nav(){
                         <Link to={"/"} className="nav-item nav-link disabled" tabIndex="-1"> BBBB </Link>
                     </div>
                     <div className="navbar-nav ml-auto">
-                        <Link to={"/"} className="nav-item nav-link"> Sign Up </Link>
+                        <Link to={"/signup"} className="nav-item nav-link"> Sign Up </Link>
                         <Link to={"/student_login"} className="nav-item nav-link"> Student Login </Link>
                         <Link to={"/admin_login"} className="nav-item nav-link">Admin Login</Link>
                     </div>
