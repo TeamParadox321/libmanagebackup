@@ -11,9 +11,11 @@ function App() {
     return (
         <Router>
             <Header/>
-            <Route path="/" exact component={Home} />
-            <Route path="/student_login" exact component={Login} />
-            <Route path="/admin_login" component={Login}/>
+            <div className={"section"}>
+                <Route path="/" exact component={Home} />
+                <Route path="/student_login" exact component={Login} />
+                <Route path="/admin_login" component={Login}/>
+            </div>
             <Footer />
         </Router>
     );

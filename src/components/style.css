@@ -8,15 +8,20 @@ header{
 body{
     background-color: grey;
 }
+.navb{
+    height: 60px;
+}
 footer{
-    height: 20%;
+    height: 5%;
     text-align: center;
 }
 #h{
     height: 100px;
     background-color: black;
 }
-
+.section{
+    height: 700px;
+}
 .box{
     height: 310px;
     width: 450px;

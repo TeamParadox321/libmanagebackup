@@ -4,7 +4,7 @@ import Logo from "./uoklogo.png";
 
 function Nav(){
     return (
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav className="navb navbar navbar-expand-md navbar-dark bg-dark">
             <a href="#" className="navbar-brand">
                 <img src={Logo} width={"28"} height="28" alt="CoolBrand" />
             </a>
