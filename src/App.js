@@ -6,12 +6,14 @@ import Home from './components/Home';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import StudentLogin from "./components/StudentLogin";
+import Login from "./components/Login";
 function App() {
     return (
         <Router>
             <Header/>
             <Route path="/" exact component={Home} />
             <Route path="/student_login" exact component={StudentLogin} />
+            <Route path="/admin_login" component={Login}/>
             <Footer />
         </Router>
     );

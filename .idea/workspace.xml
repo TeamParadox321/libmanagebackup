@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,18 +45,6 @@
       <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -61,6 +60,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -73,6 +84,7 @@
       <updated>1575441343715</updated>
       <workItem from="1575441346062" duration="3012000" />
       <workItem from="1575609541827" duration="5311000" />
+      <workItem from="1575617985910" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -201,7 +213,9 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -227,6 +241,22 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="476" y="274" key="Github.ShareDialog/47.27.1319.741@47.27.1319.741" timestamp="1575441896660" />
+    <state width="1296" height="175" key="GridCell.Tab.0.bottom" timestamp="1575618064888">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state width="1296" height="175" key="GridCell.Tab.0.bottom/47.27.1319.741@47.27.1319.741" timestamp="1575618064888" />
+    <state width="1296" height="175" key="GridCell.Tab.0.center" timestamp="1575618064886">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state width="1296" height="175" key="GridCell.Tab.0.center/47.27.1319.741@47.27.1319.741" timestamp="1575618064886" />
+    <state width="1296" height="175" key="GridCell.Tab.0.left" timestamp="1575618064885">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state width="1296" height="175" key="GridCell.Tab.0.left/47.27.1319.741@47.27.1319.741" timestamp="1575618064885" />
+    <state width="1296" height="175" key="GridCell.Tab.0.right" timestamp="1575618064887">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575618064887" />
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575466339801">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
