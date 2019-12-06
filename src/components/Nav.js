@@ -6,7 +6,7 @@ function Nav(){
     return (
         <nav className="navb navbar navbar-expand-md navbar-dark bg-dark">
             <a href="#" className="navbar-brand">
-                <img src={Logo} width={"28"} height="28" alt="CoolBrand" />
+                <img src={Logo} width={"45"} height={"45"} alt="CoolBrand" />
             </a>
             <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span className="navbar-toggler-icon"></span>
@@ -14,7 +14,8 @@ function Nav(){
 
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav">
-                    <Link to={"/"} className="nav-item nav-link active"> Home </Link>
+                    <h2 className={"header-text"}>Library Management System </h2>
+                    <Link to={"/"} className="nav-item nav-link"> Home </Link>
                     <Link to="#" className="nav-item nav-link"> Books </Link>
                     <Link to="#" className="nav-item nav-link"> AAAAAA </Link>
                     <Link to={"#"} className="nav-item nav-link disabled" tabIndex="-1"> BBBB </Link>

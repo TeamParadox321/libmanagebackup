@@ -4,7 +4,12 @@ header{
 .home{
     height: 600px;
 }
-
+.header-text{
+    color: white;
+}
+.footer-text{
+    color: white;
+}
 body{
     background-color: grey;
 }
