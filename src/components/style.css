@@ -40,7 +40,7 @@ footer{
     padding: 0px;
 }
 
-
+/*form style*/
 .login-form {
     width: 340px;
     margin: 50px auto;
@@ -52,7 +52,7 @@ footer{
     padding: 30px;
 }
 .login-form h2 {
-    margin: 0 0 15px;
+    margin: 0px 0 15px;
 }
 .form-control, .btn {
     min-height: 38px;
