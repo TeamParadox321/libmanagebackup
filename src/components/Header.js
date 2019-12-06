@@ -4,7 +4,6 @@ import ImageSlide from './ImageSlide'
 function Header() {
     return (
         <header>
-            <ImageSlide/>
             <Nav />
         </header>
     );

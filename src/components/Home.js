@@ -1,18 +1,36 @@
 import React from 'react';
-import Section from './Section';
+import IM from "./i1.jpg";
+import IM2 from "./i2.jpg";
+import IM3 from "./i3.jpg"
+
 function Home() {
     return (
-        <div className={"home"}>
-            <div className="sec_img">
-                <br /> <br /> <br /> <br />
-                <div className="box">
-                    <br /> <br />
-                    <h1 id={"t1"}> Welcome To Library </h1>
-                    <br />
-                    <h1 id={"t2"}> Opens at 09:00 </h1>
-                    <h1 id={"t2"}> Closes at 16:00 </h1>
+        <div id="demo" className="carousel slide" data-ride="carousel">
+
+            <ul className="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" className="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img src={IM} alt="Los Angeles" />
+                </div>
+                <div className="carousel-item">
+                    <img src={IM2} alt="Chicago" />
+                </div>
+                <div className="carousel-item">
+                    <img src={IM3} alt="New York" />
                 </div>
             </div>
+            <a className="carousel-control-prev" href="#demo" data-slide="prev">
+                <span className="carousel-control-prev-icon" />
+            </a>
+            <a className="carousel-control-next" href="#demo" data-slide="next">
+                <span className="carousel-control-next-icon" />
+            </a>
+
         </div>
     );
 }
