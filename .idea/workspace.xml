@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboards/simple-sidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +23,16 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1UVUdaMdjR9lggOcFg6Gkf5TNAU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -95,7 +96,7 @@
       <workItem from="1575609541827" duration="5311000" />
       <workItem from="1575617985910" duration="3506000" />
       <workItem from="1575639368272" duration="5697000" />
-      <workItem from="1575661213590" duration="6098000" />
+      <workItem from="1575661213590" duration="6359000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -272,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575655169552</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Admin Dashboard added">
+      <created>1575738092836</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1575738092836</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,20 +330,22 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Component directory created" />
     <MESSAGE value="Frontend directory deleted" />
     <MESSAGE value="app.js edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="app.js edited" />
+    <MESSAGE value="Admin Dashboard added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Dashboard added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575619516695">
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575738092404">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575619516695" />
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575738092404" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
@@ -360,10 +370,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575619518959">
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575738095724">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575619518959" />
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575738095724" />
     <state x="474" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575660642442">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
