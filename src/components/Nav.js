@@ -28,8 +28,8 @@ function Nav(){
                             </div>
                         </div>
                         <Link to="/" className="nav-item nav-link"> Students </Link>
-                        <Link to="/" className="nav-item nav-link"> Fines </Link>
-                        <Link to="/" className="nav-item dropdown nav-link"> About Us </Link>
+                        <Link to="/inventory_books" className="nav-item nav-link"> Books </Link>
+                        <Link to="/add_books" className="nav-item dropdown nav-link"> Add Books </Link>
 
                     </div>
                     <div className="navbar-nav">
