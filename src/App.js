@@ -8,8 +8,6 @@ import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import AdminLogin from "./components/AdminLogin";
-import InventoryBooks from "./components/InventoryBooks";
-import AddBooks from "./components/AddBooks";
 function App() {
     return (
         <Router>
@@ -19,8 +17,6 @@ function App() {
                 <Route path="/student_login" component={Login} />
                 <Route path="/admin_login" component={AdminLogin}/>
                 <Route path="/student_signup" component={Signup}/>
-                <Route path="/inventory_books" component={InventoryBooks}/>
-                <Route path={"/add_books"} component={AddBooks}/>
             </div>
             <Footer />
         </Router>
