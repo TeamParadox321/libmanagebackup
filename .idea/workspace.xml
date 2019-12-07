@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1UVUdaMdjR9lggOcFg6Gkf5TNAU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -33,28 +37,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Dashboards" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src\components" />
       <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -71,6 +69,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -85,6 +95,7 @@
       <workItem from="1575609541827" duration="5311000" />
       <workItem from="1575617985910" duration="3506000" />
       <workItem from="1575639368272" duration="5697000" />
+      <workItem from="1575661213590" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -317,6 +328,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="app.js edited" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
     <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575619516695">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
@@ -325,22 +340,22 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="476" y="274" key="Github.ShareDialog/47.27.1319.741@47.27.1319.741" timestamp="1575441896660" />
-    <state width="1296" height="175" key="GridCell.Tab.0.bottom" timestamp="1575621557970">
+    <state width="1296" height="175" key="GridCell.Tab.0.bottom" timestamp="1575660975022">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state width="1296" height="175" key="GridCell.Tab.0.bottom/47.27.1319.741@47.27.1319.741" timestamp="1575621557970" />
-    <state width="1296" height="175" key="GridCell.Tab.0.center" timestamp="1575621557970">
+    <state width="1296" height="175" key="GridCell.Tab.0.bottom/47.27.1319.741@47.27.1319.741" timestamp="1575660975022" />
+    <state width="1296" height="175" key="GridCell.Tab.0.center" timestamp="1575660975021">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state width="1296" height="175" key="GridCell.Tab.0.center/47.27.1319.741@47.27.1319.741" timestamp="1575621557970" />
-    <state width="1296" height="175" key="GridCell.Tab.0.left" timestamp="1575621557969">
+    <state width="1296" height="175" key="GridCell.Tab.0.center/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
+    <state width="1296" height="175" key="GridCell.Tab.0.left" timestamp="1575660975021">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state width="1296" height="175" key="GridCell.Tab.0.left/47.27.1319.741@47.27.1319.741" timestamp="1575621557969" />
-    <state width="1296" height="175" key="GridCell.Tab.0.right" timestamp="1575621557970">
+    <state width="1296" height="175" key="GridCell.Tab.0.left/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
+    <state width="1296" height="175" key="GridCell.Tab.0.right" timestamp="1575660975021">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575621557970" />
+    <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog" timestamp="1575647113078">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
@@ -349,5 +364,9 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575619518959" />
+    <state x="474" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575660642442">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state x="474" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1575660642442" />
   </component>
 </project>
