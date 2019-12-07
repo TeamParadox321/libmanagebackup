@@ -23,22 +23,20 @@ function Nav(){
                         <div className="nav-item dropdown nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                             Books
                             <div className="dropdown-menu">
-                                <Link to={"/"} className="dropdown-item"> Inventory Books </Link>
-                                <Link to={"/"} className="dropdown-item"> Online Search </Link>
+                                <Link to={"/inventory_books"} className="dropdown-item"> Inventory Books </Link>
+                                <Link to={"/online_search"} className="dropdown-item"> Online Search </Link>
                             </div>
                         </div>
-                        <Link to="/" className="nav-item nav-link"> Students </Link>
-                        <Link to="/inventory_books" className="nav-item nav-link"> Books </Link>
-                        <Link to="/add_books" className="nav-item dropdown nav-link"> Add Books </Link>
-
+                        <Link to="/about_us" className="nav-item nav-link"> About Us </Link>
                     </div>
                     <div className="navbar-nav">
                         <div className="nav-item dropdown nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                             Admin
                             <div className="dropdown-menu">
-                                <Link to={"/"} className="dropdown-item"> Students </Link>
-                                <Link to={"/"} className="dropdown-item"> Add Books </Link>
-                                <Link to={"/"} className="dropdown-item"> Books Issue </Link>
+                                <Link to={"/students"} className="dropdown-item"> Students </Link>
+                                <Link to={"/add_books"} className="dropdown-item"> Add Books </Link>
+                                <Link to={"/update_books"} className="dropdown-item"> Update Books </Link>
+                                <Link to={"/books_issue"} className="dropdown-item"> Books Issue </Link>
                             </div>
                         </div>
                     </div>

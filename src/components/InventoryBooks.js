@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-
+import { Link,NavLink } from "react-router-dom";
 
 const Book = props => (
     <tr>
@@ -8,6 +8,7 @@ const Book = props => (
         <td> {props.book.book_name} </td>
         <td> {props.book.book_category} </td>
         <td> {props.book.book_author} </td>
+        <td> <Link to={"/update_books"+props.book._id}> Edit </Link> </td>
     </tr>
 )
 
@@ -29,7 +30,7 @@ export default class InverntoryBooks extends Component{
     componentDidUpdate(){
         axios.get('http://localhost:4000/books/')
             .then(response=>{
-                this.setState({todos: response.data})
+                this.setState({books: response.data})
             })
             .catch(function (error) {
                 console.log(error)
@@ -51,6 +52,7 @@ export default class InverntoryBooks extends Component{
                         <th>Book Name</th>
                         <th>Category</th>
                         <th>Author</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
