@@ -19,9 +19,8 @@ export default class EditTodo extends Component{
             book_author: ''
         }
     }
-
     componentDidMount(){
-        axios.get('http://localhost:4000/books/'+this.props.match.params.id)
+        axios.get('http://172.16.40.204:4000/books/'+this.props.match.params.id)
             .then(response => {
                 this.setState({
                     book_id: response.data.book_id,
@@ -68,7 +67,7 @@ export default class EditTodo extends Component{
             book_category: this.state.book_category,
             book_author: this.state.book_author
         };
-        axios.post('http://localhost:4000/books/updatebooks/'+this.props.match.params.id, obj)
+        axios.post('http://172.16.40.204:4000/books/updatebooks/'+this.props.match.params.id, obj)
             .then(res=>console.log(res.data));
         this.props.history.push('/');
     }
