@@ -25,7 +25,7 @@ body{
     background-color: black;
 }
 .section{
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
     min-height: 610px;
 }
