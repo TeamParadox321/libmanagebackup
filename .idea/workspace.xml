@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InventoryBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UpdateBooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -288,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575744209197</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="app.js edited">
+      <created>1575775578485</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1575775578485</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
