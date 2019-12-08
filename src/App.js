@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./components/style.css"
+import "./components/Dashboards/simple-sidebar.css"
 import './App.css';
 import Home from './components/Home';
 import Header from "./components/Header";
@@ -11,6 +12,7 @@ import AdminLogin from "./components/AdminLogin";
 import InventoryBooks from "./components/InventoryBooks";
 import AddBooks from "./components/AddBooks";
 import UpdateBooks from "./components/UpdateBooks";
+import AdminDashboard from "./components/Dashboards/AdminDashboard";
 function App() {
     return (
         <Router>
@@ -23,6 +25,7 @@ function App() {
                 <Route path="/inventory_books" component={InventoryBooks}/>
                 <Route path="/add_books" component={AddBooks}/>
                 <Route path="/update_books:id" component={UpdateBooks}/>
+                <Route path="/admin_dashboard" component={AdminDashboard}/>
             </div>
             <Footer />
         </Router>

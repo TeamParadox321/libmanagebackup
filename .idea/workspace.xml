@@ -4,8 +4,7 @@
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InventoryBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UpdateBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboards/AdminDashboard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,7 @@
       <workItem from="1575617985910" duration="3506000" />
       <workItem from="1575639368272" duration="5697000" />
       <workItem from="1575661213590" duration="6098000" />
-      <workItem from="1575772645035" duration="1727000" />
+      <workItem from="1575772645035" duration="2559000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -289,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575744209197</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="backend created">
+      <created>1575774478556</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1575774478556</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +348,8 @@
     <MESSAGE value="Component directory created" />
     <MESSAGE value="Frontend directory deleted" />
     <MESSAGE value="app.js edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="app.js edited" />
+    <MESSAGE value="backend created" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend created" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
