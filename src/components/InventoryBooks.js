@@ -8,7 +8,7 @@ const Book = props => (
         <td> {props.book.book_name} </td>
         <td> {props.book.book_category} </td>
         <td> {props.book.book_author} </td>
-        <td> <Link to={"/update_books"+props.book._id}> Edit </Link> </td>
+
     </tr>
 )
 
@@ -46,14 +46,13 @@ export default class InverntoryBooks extends Component{
             <div className="container">
                 <br/><br/><br/>
                 <h2>All Books</h2>
-                <table className="table table-dark table-hover">
+                <table className="table text-light bg-secondary table-hover">
                     <thead>
                     <tr>
                         <th>Book ID</th>
                         <th>Book Name</th>
                         <th>Category</th>
                         <th>Author</th>
-                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -63,4 +62,6 @@ export default class InverntoryBooks extends Component{
             </div>
         )
     }
+
+//<th>Actions</th>  <td> <Link to={"/update_books"+props.book._id}> Edit </Link> </td>
 }
