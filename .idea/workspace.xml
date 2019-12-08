@@ -356,10 +356,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575619516695">
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575777055406">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575619516695" />
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575777055406" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
@@ -380,14 +380,18 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
+    <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1575777069683">
+      <screen x="47" y="27" width="1319" height="741" />
+    </state>
+    <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog/47.27.1319.741@47.27.1319.741" timestamp="1575777069683" />
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog" timestamp="1575647113078">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575619518959">
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575777058336">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575619518959" />
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575777058336" />
     <state x="474" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575660642442">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
