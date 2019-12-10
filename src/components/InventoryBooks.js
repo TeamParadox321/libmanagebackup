@@ -8,7 +8,7 @@ const Book = props => (
         <td> {props.book.book_name} </td>
         <td> {props.book.book_category} </td>
         <td> {props.book.book_author} </td>
-
+        <td> <Link to={"/update_books"+props.book._id}> Edit </Link> </td>
     </tr>
 )
 
@@ -19,7 +19,7 @@ export default class InverntoryBooks extends Component{
     }
 
     componentDidMount(){
-        axios.get('http:/localhost:4000/books/')
+        axios.get('http://192.168.8.104:4000/books/')
             .then(response=>{
                 this.setState({books: response.data})
             })
@@ -53,6 +53,8 @@ export default class InverntoryBooks extends Component{
                         <th>Book Name</th>
                         <th>Category</th>
                         <th>Author</th>
+                        <th>Actions</th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -63,5 +65,5 @@ export default class InverntoryBooks extends Component{
         )
     }
 
-//<th>Actions</th>  <td> <Link to={"/update_books"+props.book._id}> Edit </Link> </td>
+//
 }

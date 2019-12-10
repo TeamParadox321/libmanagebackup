@@ -31,7 +31,7 @@ bookRoutes.route('/').get(function (req, res) {
 
 bookRoutes.route('/:id').get(function(req,res){
   let id = req.params.id;
-  Todo.findById(id, function (err, book) {
+  Book.findById(id, function (err, book) {
     res.json(book);
   })
 });
