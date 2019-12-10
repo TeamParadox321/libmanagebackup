@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/404page/Notfound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddBooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InventoryBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UpdateBooks.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,14 +49,25 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/404page" />
-      <recent name="$PROJECT_DIR$/src/components/Dashboards" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src\components" />
       <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Dashboards" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -76,18 +83,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -105,7 +100,8 @@
       <workItem from="1575639368272" duration="5697000" />
       <workItem from="1575661213590" duration="6098000" />
       <workItem from="1575772645035" duration="1727000" />
-      <workItem from="1575983884691" duration="3140000" />
+      <workItem from="1575952332264" duration="1404000" />
+      <workItem from="1575986953974" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -310,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575775972129</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="app.js edited">
+      <created>1575777183896</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1575777183896</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,18 +366,17 @@
     <MESSAGE value="Component directory created" />
     <MESSAGE value="Frontend directory deleted" />
     <MESSAGE value="app.js edited" />
-    <MESSAGE value="style.css edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="style.css edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="app.js edited" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575777221477">
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1575777212640">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575777221477" />
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1575777212640" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
@@ -403,13 +405,13 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575777223935">
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575777058336">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575777223935" />
-    <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575985562817">
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1575777058336" />
+    <state x="474" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575660642442">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1575985562817" />
+    <state x="474" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1575660642442" />
   </component>
 </project>

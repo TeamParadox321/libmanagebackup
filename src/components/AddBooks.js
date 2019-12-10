@@ -50,7 +50,7 @@ export default class AddBooks extends Component{
             book_category: this.state.book_category,
             book_author: this.state.book_author
         }
-        axios.post('http://localhost:4000/books/addbooks', newBook);
+        axios.post('http://192.168.8.104:4000/books/addbooks', newBook);
         this.setState({
             book_id : '',
             book_name : '',
