@@ -10,7 +10,7 @@ let Book = require('./book_model');
 app.use(cors());
 app.use(bosyParser.json());
 
-mongoose.connect('mongodb://localhost/books' , { useUnifiedTopology: true, useNewUrlParser: true}).catch(err=>{
+mongoose.connect('mongodb://localhost:27017/books' , { useUnifiedTopology: true, useNewUrlParser: true}).catch(err=>{
   console.log("db error "+ err.message);
 });
 const connection = mongoose.connection;
