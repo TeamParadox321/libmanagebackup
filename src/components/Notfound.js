@@ -2,9 +2,9 @@ import React from 'react'
 
 function Notfound() {
     return(
-        <h1>Not Found</h1>
-    )
+        <h1>Not found</h1>
 
+    )
 }
 
 
