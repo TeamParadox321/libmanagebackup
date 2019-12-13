@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
       <workItem from="1575983884691" duration="5504000" />
       <workItem from="1576048471497" duration="599000" />
       <workItem from="1576066804716" duration="6000" />
-      <workItem from="1576209118547" duration="6851000" />
+      <workItem from="1576209118547" duration="8121000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -328,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576216943950</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update_book bug fixed">
+      <created>1576217020050</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1576217020050</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,10 +403,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1576216943241">
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2" timestamp="1576217019858">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576216943241" />
+    <state x="233" y="27" width="936" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576217019858" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
