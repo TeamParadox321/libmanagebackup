@@ -3,8 +3,10 @@ const app = express();
 const bosyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const mongooseUser = require('mongoose');
 const PORT = 4000;
 const bookRoutes = express.Router();
+const signupRoutes= express.Router();
 let Book = require('./book_model');
 let Student = require('./Student_model');
 
@@ -15,6 +17,15 @@ mongoose.connect('mongodb://localhost:27017/books' , { useUnifiedTopology: true,
   console.log("db error "+ err.message);
 });
 const connection = mongoose.connection;
+
+mongooseUser.connect('mongodb://localhost:27017/students' , { useUnifiedTopology: true, useNewUrlParser: true}).catch(err=>{
+  console.log("db error "+ err.message);
+});
+
+mongooseUser.connection.once('open', function () {
+  console.log("MongoDB connection  to student established successfully ");
+});
+
 
 connection.once('open', function () {
   console.log("MongoDB connection established successfully ");
@@ -47,11 +58,11 @@ bookRoutes.route('/addbooks').post(function (req,res) {
       });
 });
 
-bookRoutes.route('/student_signup').post(function (req,res) {
+signupRoutes.route('/student_signup').post(function (req,res) {
   let user = new Student(req.body);
   user.save()
       .then(user => {
-        res.status(200).json({'book': 'User added successfully '});
+        res.status(200).json({'user': 'User added successfully '});
       })
       .catch(err=>{
         res.status(400).send('adding new User failed');
@@ -80,6 +91,7 @@ bookRoutes.route('/updatebooks/:id').post(function (req,res) {
 });
 
 app.use('/books', bookRoutes);
+app.use('/student',signupRoutes)
 
 app.listen(PORT, function () {
   console.log("Server is running on Port : " + PORT);
