@@ -19,7 +19,7 @@ export default class InverntoryBooks extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://192.168.8.104:4000/books/')
+        axios.get('http://localhost:4000/books/')
             .then(response=>{
                 this.setState({books: response.data})
             })

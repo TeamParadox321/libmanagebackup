@@ -3,7 +3,7 @@ import {Link} from  'react-router-dom'
 
 
 
-function Login() {
+function UserLogin() {
     return(
         <div className="login-form">
             <form>
@@ -33,4 +33,4 @@ function Login() {
 
 }
 
-export default Login;
+export default UserLogin;

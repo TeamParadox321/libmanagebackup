@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const PORT = 4000;
 const bookRoutes = express.Router();
 let Book = require('./book_model');
+let Student = require('./Student_model');
 
 app.use(cors());
 app.use(bosyParser.json());
@@ -45,6 +46,19 @@ bookRoutes.route('/addbooks').post(function (req,res) {
         res.status(400).send('adding new book failed');
       });
 });
+
+bookRoutes.route('/student_signup').post(function (req,res) {
+  let user = new Student(req.body);
+  user.save()
+      .then(user => {
+        res.status(200).json({'book': 'User added successfully '});
+      })
+      .catch(err=>{
+        res.status(400).send('adding new User failed');
+      });
+});
+
+
 bookRoutes.route('/updatebooks/:id').post(function (req,res) {
   Book.findById(req.params.id, function (err, book) {
     if(!book){
