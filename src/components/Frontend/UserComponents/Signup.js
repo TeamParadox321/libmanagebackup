@@ -62,10 +62,13 @@ export default class Signup extends Component{
                 stu_id: '',
                 stu_name: '',
                 stu_email: '',
-                stu_password: ''
+                stu_password: '',
+                stu_confirm_password:''
             });
+            alert("Registration Successful");
         }else{
             alert("Password does not match");
+            e.preventDefault();
         }
 
 
