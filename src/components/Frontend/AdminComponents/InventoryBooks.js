@@ -19,7 +19,7 @@ export default class InverntoryBooks extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:4000/books/')
+        axios.get('http://111.223.165.203:4000/books/')
             .then(response=>{
                 this.setState({books: response.data})
             })
@@ -28,7 +28,7 @@ export default class InverntoryBooks extends Component{
             });
     }
     componentDidUpdate(){
-        axios.get('http://localhost:4000/books/')
+        axios.get('http://111.223.165.203:4000/books/')
             .then(response=>{
                 this.setState({books: response.data})
             })

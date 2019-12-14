@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/new.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +110,10 @@
       <workItem from="1575983884691" duration="5504000" />
       <workItem from="1576048471497" duration="599000" />
       <workItem from="1576066804716" duration="6000" />
-      <workItem from="1576209118547" duration="18902000" />
+      <workItem from="1576209118547" duration="20114000" />
+      <workItem from="1576298197304" duration="260000" />
+      <workItem from="1576298756163" duration="8172000" />
+      <workItem from="1576335425630" duration="3650000" />
     </task>
     <task id="LOCAL-00001" summary="Component directory created">
       <created>1575442095423</created>
@@ -364,7 +374,28 @@
       <option name="project" value="LOCAL" />
       <updated>1576230366456</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="user registration updated">
+      <created>1576231747006</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1576231747006</updated>
+    </task>
+    <task id="LOCAL-00039" summary="user registration updated">
+      <created>1576231814304</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1576231814304</updated>
+    </task>
+    <task id="LOCAL-00040" summary="user registration updated">
+      <created>1576231822800</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1576231822800</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,10 +464,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576231813725">
+    <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576231822670">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231813725" />
+    <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
@@ -465,24 +496,13 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576231748776">
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576231825179">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231748776" />
-    <state x="474" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576231761536">
+    <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
+    <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576232313143">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
-    <state x="474" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1576231761536" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js</url>
-          <line>72</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1576232313143" />
   </component>
 </project>
