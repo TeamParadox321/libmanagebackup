@@ -1,0 +1,37 @@
+.side-drawer{
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+}
+
+body {
+    overflow-x: hidden;
+}
+.img{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.side-drawer h1{
+    margin-bottom: 50px;
+}
+#sidebar-wrapper {
+    min-height: 100%;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+.list-group{
+    margin-top: 0px;
+}

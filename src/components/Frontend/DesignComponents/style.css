@@ -6,19 +6,33 @@ header{
 }
 .header-text{
     color: white;
+    text-align: left;
 }
 .footer-text{
     color: white;
 }
+.list-group-item{
+    color: white;
+}
 body{
     background-color: white;
+    min-width: 350px;
 }
 .navb{
     min-height: 60px;
+    min-width: 350px;
+    display: flex;
+}
+.icon{
+    margin-left: 20px;
+}
+.spacer{
+    flex: 1;
 }
 .footer{
     height: 55px;
     text-align: center;
+    min-width: 350px;
 }
 #h{
     height: 100px;

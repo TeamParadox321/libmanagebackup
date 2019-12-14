@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
+    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="New header was designed with side bar">
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/BackDrop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/BackDrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/new.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,16 +55,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src\components" />
-      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\new\src\components\Frontend\DesignComponents\HeaderFooter" />
       <recent name="$PROJECT_DIR$/Server" />
       <recent name="$PROJECT_DIR$/src/components/Frontend/AdminComponents" />
       <recent name="$PROJECT_DIR$/src/components/Frontend/UserComponents" />
       <recent name="$PROJECT_DIR$/src/components/Frontend/DesignComponents/NotFoundComponent" />
-      <recent name="$PROJECT_DIR$/src/components/Frontend/DesignComponents" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\new\src\components\Frontend\DesignComponents\HeaderFooter" />
+      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src\components" />
+      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -453,40 +457,51 @@
     <MESSAGE value="update_book bug fixed" />
     <MESSAGE value="user registration added" />
     <MESSAGE value="user registration updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="user registration updated" />
+    <MESSAGE value="New header was designed with side bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="New header was designed with side bar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
-    <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575989082908">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state x="456" y="131" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576346497892">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576346497892" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576231822670">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576356441973">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576356441973" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
+    <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1576352485837">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="525" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576352485837" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="476" y="274" key="Github.ShareDialog/47.27.1319.741@47.27.1319.741" timestamp="1575441896660" />
-    <state width="1296" height="175" key="GridCell.Tab.0.bottom" timestamp="1575660975022">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state width="1364" height="168" key="GridCell.Tab.0.bottom" timestamp="1576346749527">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1364" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576346749527" />
     <state width="1296" height="175" key="GridCell.Tab.0.bottom/47.27.1319.741@47.27.1319.741" timestamp="1575660975022" />
-    <state width="1296" height="175" key="GridCell.Tab.0.center" timestamp="1575660975021">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state width="1364" height="168" key="GridCell.Tab.0.center" timestamp="1576346749527">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1364" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576346749527" />
     <state width="1296" height="175" key="GridCell.Tab.0.center/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1296" height="175" key="GridCell.Tab.0.left" timestamp="1575660975021">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state width="1364" height="168" key="GridCell.Tab.0.left" timestamp="1576346749527">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1364" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576346749527" />
     <state width="1296" height="175" key="GridCell.Tab.0.left/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1296" height="175" key="GridCell.Tab.0.right" timestamp="1575660975021">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state width="1364" height="168" key="GridCell.Tab.0.right" timestamp="1576346749527">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1364" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576346749527" />
     <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
     <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1575777069683">
       <screen x="47" y="27" width="1319" height="741" />
@@ -500,9 +515,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
-    <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576232313143">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576356305740">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="497" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1576356305740" />
     <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1576232313143" />
   </component>
 </project>
