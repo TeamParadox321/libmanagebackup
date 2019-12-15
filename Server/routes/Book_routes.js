@@ -8,7 +8,6 @@ const History = require('../models/History_model');
 const IssedBooks = require('../models/Issued_book_model');
 const ReservedBooks = require('../models/Reserved_book_model');
 const Admin = require('../models/Admin_model');
-const UserBook = require('../models/Book_for_users_model');
 app.use(cors());
 
 routes.route('/').get(function (req, res) {
@@ -27,26 +26,35 @@ routes.route('/:id').get(function(req,res){
         res.json(book);
     })
 });
+
 routes.route('/addbooks').post(function (req,res) {
-    let book = new Book({
-        book_id : req.body.book_id,
-        book_title : req.body.book_title,
-        book_category : req.body.book_category,
-        book_author : req.body.book_author,
-        book_edition : req.body.book_edition,
-        book_pages : req.body.book_pages,
-        book_isbn : req.body.book_isbn,
-        book_year : req.body.book_year,
-        book_availability: true
-    });
-    book.save()
+    Book.findOne({
+        book_id: req.body.book_id
+    })
         .then(book => {
-            res.status(200).json({'book': 'book added successfully '});
+            if(!book){
+                let book = new Book({
+                    book_id : req.body.book_id,
+                    book_title : req.body.book_title,
+                    book_category : req.body.book_category,
+                    book_author : req.body.book_author,
+                    book_edition : req.body.book_edition,
+                    book_pages : req.body.book_pages,
+                    book_isbn : req.body.book_isbn,
+                    book_year : req.body.book_year,
+                    book_availability: true
+                });
+                book.save()
+                    .then(book => {
+                        res.status(200).json({'book': 'book added successfully '});
+                    })
+                    .catch(err=>{
+                        res.status(400).send('adding new book failed');
+                    });
+            }
         })
-        .catch(err=>{
-            res.status(400).send('adding new book failed');
-        });
 });
+
 routes.route('/updatebooks/:id').post(function (req,res) {
     Book.findById(req.params.id, function (err, book) {
         if(!book){

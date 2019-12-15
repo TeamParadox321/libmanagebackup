@@ -16,7 +16,7 @@ let Student = new Schema({
     },
     stu_password: {
         type: String
-    },
+    }
 });
 
 module.exports = mongoose.model('students', Student);

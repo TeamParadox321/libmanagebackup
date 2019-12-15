@@ -45,7 +45,7 @@ export default class IssuedBooks extends Component{
         return(
             <div className="login-form">
                 <form onSubmit={this.onSubmit}>
-                    <h2 className="text-center"> Add Books </h2>
+                    <h2 className="text-center"> Issue Book </h2>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Book ID" required="required"
                                value={this.state.book_id} onChange={this.onChangeBookId}/>
