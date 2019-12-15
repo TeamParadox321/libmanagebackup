@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Dashboards/simple-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Dashboards/simple-sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/IssueBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/IssueBooks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,14 +425,7 @@
       <option name="project" value="LOCAL" />
       <updated>1576407905504</updated>
     </task>
-    <task id="LOCAL-00046" summary="issued books component added">
-      <created>1576408596482</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1576408596533</updated>
-    </task>
-    <option name="localTasksCounter" value="47" />
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,8 +487,7 @@
     <MESSAGE value="removed sidebar linking issue." />
     <MESSAGE value="changed structure of Backend" />
     <MESSAGE value="server.js edited" />
-    <MESSAGE value="issued books component added" />
-    <option name="LAST_COMMIT_MESSAGE" value="issued books component added" />
+    <option name="LAST_COMMIT_MESSAGE" value="server.js edited" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
@@ -509,10 +499,10 @@
     </state>
     <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576346497892" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576408594818">
+    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576407904556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576408594818" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576407904556" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
     <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1576352485837">
       <screen x="0" y="0" width="1536" height="824" />
@@ -550,15 +540,15 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576408611119">
+    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576407920250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576408611119" />
+    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576407920250" />
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
-    <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576407882452">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="474" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576409128503">
+      <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="497" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1576407882452" />
-    <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1576232313143" />
+    <state x="474" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1576409128503" />
   </component>
 </project>
