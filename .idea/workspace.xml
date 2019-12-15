@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="server.js edited">
-      <change afterPath="$PROJECT_DIR$/Server/models/Admin_model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/models/Book_for_users_model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/models/History_model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/models/Issued_book_model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/models/Reserved_book_model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/routes/Issue_book_routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/IssueBooks.js" afterDir="false" />
+    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/models/Student_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/models/Student_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/models/book_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/models/book_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/routes/Book_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/Book_routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/routes/Student_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/Student_routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Dashboards/AdminDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Dashboards/simple-sidebar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/models/Issued_book_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/models/Issued_book_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/IssueBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/IssueBooks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576400742004</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="server.js edited">
+      <created>1576406867186</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1576406867186</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,9 +479,9 @@
     <MESSAGE value="user registration updated" />
     <MESSAGE value="New header was designed with side bar" />
     <MESSAGE value="removed sidebar linking issue." />
-    <MESSAGE value="server.js edited" />
     <MESSAGE value="changed structure of Backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed structure of Backend" />
+    <MESSAGE value="server.js edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="server.js edited" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
@@ -501,10 +493,10 @@
     </state>
     <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576346497892" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576400740692">
+    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576406892534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576400740692" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576406892534" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
     <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1576352485837">
       <screen x="0" y="0" width="1536" height="824" />
@@ -547,10 +539,10 @@
     </state>
     <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576385962540" />
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
-    <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576406720563">
+    <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576407882452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="497" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1576406720563" />
+    <state x="497" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1576407882452" />
     <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1576232313143" />
   </component>
 </project>

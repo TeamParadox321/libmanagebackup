@@ -4,7 +4,7 @@ let IssuedBook = new Schema({
     book_id: {
         type: String
     },
-    studnet_id: {
+    student_id: {
         type: String
     },
     book_title: {
