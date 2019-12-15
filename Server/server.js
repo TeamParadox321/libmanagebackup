@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const bosyParser = require('body-parser');
+const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const PORT = 4000;
@@ -9,7 +9,7 @@ const bookRoutes = require('./routes/Book_routes');
 const issuedBookRoutes = require('./routes/Issue_book_routes');
 
 app.use(cors());
-app.use(bosyParser.json());
+app.use(bodyParser.json());
 
 mongoose.connect('mongodb://localhost:27017/library_management_system' , { useUnifiedTopology: true, useNewUrlParser: true}).catch(err=>{
   console.log("db error "+ err.message);
