@@ -4,8 +4,9 @@ const bosyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const PORT = 4000;
-var stuRoutes = require('./routes/Student_routes');
+const stuRoutes = require('./routes/Student_routes');
 const bookRoutes = require('./routes/Book_routes');
+const issuedBookRoutes = require('./routes/Issue_book_routes');
 
 app.use(cors());
 app.use(bosyParser.json());
@@ -23,6 +24,8 @@ connection.once('open', function () {
 
 app.use('/books', bookRoutes);
 app.use('/students', stuRoutes);
+app.use('/issued_books',issuedBookRoutes);
+
 
 app.listen(PORT, function () {
   console.log("Server is running on Port : " + PORT);

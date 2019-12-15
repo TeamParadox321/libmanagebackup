@@ -11,19 +11,10 @@ const Admin = require('../models/Admin_model');
 const UserBook = require('../models/Book_for_users_model');
 app.use(cors());
 
-routes.route('/').get(function (req, res) {
-    Student.find(function (err, students) {
-        if(err){
-            console.log(err);
-        }else{
-            res.json(students);
-        }
-    })
-});
 
-routes.route('/student_signup').post(function (req,res) {
-    let user = new Student(req.body);
-    user.save()
+routes.route('/issue_book').post(function (req,res) {
+    let issue = new IssedBooks(req.body);
+    issue.save()
         .then(user => {
             res.status(200).json({'user': 'User added successfully '});
         })

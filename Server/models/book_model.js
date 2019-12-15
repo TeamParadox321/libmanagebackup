@@ -5,7 +5,13 @@ let Book = new Schema({
     book_id: {
         type: String
     },
-    book_name: {
+    book_isbn: {
+        type: String
+    },
+    book_title: {
+        type: String
+    },
+    book_edition:{
         type: String
     },
     book_category: {
@@ -14,6 +20,16 @@ let Book = new Schema({
     book_author: {
         type: String
     },
+    book_pages: {
+        type: String
+    },
+    book_year: {
+        type: String
+    },
+    book_availability: {
+        type: Boolean,
+        default: true
+    }
 });
 
-module.exports = mongoose.model('Book', Book);
+module.exports = mongoose.model('books', Book);

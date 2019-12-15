@@ -12,7 +12,6 @@ import AdminLogin from "./components/Frontend/AdminComponents/AdminLogin";
 import InventoryBooks from "./components/Frontend/AdminComponents/InventoryBooks";
 import AddBooks from "./components/Frontend/AdminComponents/AddBooks";
 import UpdateBooks from "./components/Frontend/AdminComponents/UpdateBooks";
-import AdminDashboard from "./components/Frontend/AdminComponents/Dashboards/AdminDashboard";
 import Notfound from "./components/Frontend/DesignComponents/NotFoundComponent/Notfound";
 import SideDrawer from './components/Frontend/DesignComponents/HeaderFooter/SideDrawer'
 import BackDrop from './components/Frontend/DesignComponents/HeaderFooter/BackDrop'
@@ -51,7 +50,6 @@ class App extends Component{
                         <Route path="/inventory_books" component={InventoryBooks}/>
                         <Route path="/add_books" component={AddBooks}/>
                         <Route path="/update_books:id" component={UpdateBooks}/>
-                        <Route path="/admin_dashboard" component={AdminDashboard}/>
                         <Route path="*" component={Notfound}/>
                     </Switch>
                 </div>

@@ -11,6 +11,9 @@ let Student = new Schema({
     stu_name: {
         type: String
     },
+    stu_phone_number:{
+        type: String
+    },
     stu_password: {
         type: String
     },
