@@ -1,8 +1,5 @@
 import React from 'react';
 import {Link} from  'react-router-dom'
-
-
-
 function UserLogin() {
     return(
         <div className="login-form">
@@ -12,25 +9,24 @@ function UserLogin() {
                     <input type="text" className="form-control" placeholder="Student ID" required="required"/>
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" placeholder="Password" required="required"/>
+                    <input type="password" className={"form-control"} placeholder={"Password"} required={"required"}/>
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary btn-block">Log in</button>
+                    <button type={"submit"} className={"btn btn-primary btn-block"}>Log in</button>
                 </div>
                 <div>
                     <span className="clearfix">
-                        <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
-                        <Link to={"/student_registration"} className="pull-right">Forgot Password?</Link>
+                        <label className={"pull-left checkbox-inline"}><input type={"checkbox"}/> Remember me</label>
+                        <span style={{}}/>
+                        <Link to={"/student_registration"} className={"pull-right"}>Forgot Password?</Link>
                     </span>
                     <span className={"pull-right"}>
-                        <Link to="/student_signup">Create an Account</Link>
+                        <Link to={"/student_signup"}>Create an Account</Link>
                     </span>
                 </div>
             </form>
 
         </div>
     )
-
 }
-
 export default UserLogin;

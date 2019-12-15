@@ -57,7 +57,7 @@ export default class Signup extends Component{
                 stu_email: this.state.stu_email,
                 stu_password: this.state.stu_password
             }
-            axios.post('http://111.223.165.203:4000/student/student_signup', newUser);
+            axios.post('http://localhost:4000/students/student_signup', newUser);
             this.setState({
                 stu_id: '',
                 stu_name: '',
