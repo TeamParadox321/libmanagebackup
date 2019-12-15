@@ -34,7 +34,7 @@ export default class IssuedBooks extends Component{
             book_id: this.state.book_id,
             stu_id: this.state.stu_id
         }
-        axios.post('http://localhost:4000/books/addbooks', newBook);
+        axios.post('', newBook);
         this.setState({
             book_id : '',
             stu_id : ''
