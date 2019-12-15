@@ -60,6 +60,9 @@ export default class InverntoryBooks extends Component{
                         {this.bookList()}
                     </tbody>
                 </table>
+                <br />
+                <br />
+                <center><button type="submit" className="btn btn-primary btn-block bg-dark">Add Books</button></center>
             </div>
         )
     }

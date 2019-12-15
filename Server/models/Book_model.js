@@ -20,9 +20,6 @@ let Book = new Schema({
     book_author: {
         type: String
     },
-    book_pages: {
-        type: String
-    },
     book_year: {
         type: String
     },

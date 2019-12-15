@@ -11,7 +11,6 @@ export default class AddBooks extends Component{
         this.onChangeBookCategory = this.onChangeBookCategory.bind(this);
         this.onChangeBookAuthor = this.onChangeBookAuthor.bind(this);
         this.onChangeBookEdition = this.onChangeBookEdition.bind(this);
-        this.onChangeBookPages = this.onChangeBookPages.bind(this);
         this.onChangeBookIsbn = this.onChangeBookIsbn.bind(this);
         this.onChangeBookYear = this.onChangeBookYear.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -23,7 +22,6 @@ export default class AddBooks extends Component{
             book_author : '',
             book_isbn: '',
             book_edition: '',
-            book_pages: '',
             book_year: ''
         }
     }
@@ -53,11 +51,6 @@ export default class AddBooks extends Component{
             book_edition : e.target.value
         })
     }
-    onChangeBookPages(e){
-        this.setState({
-            book_pages : e.target.value
-        })
-    }
     onChangeBookIsbn(e){
         this.setState({
             book_isbn : e.target.value
@@ -79,7 +72,6 @@ export default class AddBooks extends Component{
             book_author: this.state.book_author,
             book_isbn: this.state.book_isbn,
             book_edition: this.state.book_edition,
-            book_pages: this.state.book_pages,
             book_year: this.state.book_year
         }
         axios.post('http://localhost:4000/books/addbooks', newBook);
@@ -90,7 +82,6 @@ export default class AddBooks extends Component{
             book_author : '',
             book_isbn: '',
             book_edition: '',
-            book_pages: '',
             book_year: ''
         });
     }
@@ -113,24 +104,20 @@ export default class AddBooks extends Component{
                                value={this.state.book_title} onChange={this.onChangeBookTitle}/>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Book Edition" required="required"
+                        <input type="text" className="form-control" placeholder="Book Edition"
                                value={this.state.book_edition} onChange={this.onChangeBookEdition}/>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Category" required="required"
+                        <input type="text" className="form-control" placeholder="Category"
                                value={this.state.book_category} onChange={this.onChangeBookCategory}/>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Author" required="required"
+                        <input type="text" className="form-control" placeholder="Author"
                                value={this.state.book_author} onChange={this.onChangeBookAuthor}/>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Published Year" required="required"
+                        <input type="text" className="form-control" placeholder="Published Year"
                                value={this.state.book_year} onChange={this.onChangeBookYear}/>
-                    </div>
-                    <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Number Of Pages" required="required"
-                               value={this.state.book_pages} onChange={this.onChangeBookPages}/>
                     </div>
                     <div className="form-group">
                         <button type="submit" className="btn btn-primary btn-block">Add Book</button>

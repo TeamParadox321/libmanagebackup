@@ -11,7 +11,6 @@ export default class EditTodo extends Component{
         this.onChangeBookCategory = this.onChangeBookCategory.bind(this);
         this.onChangeBookAuthor = this.onChangeBookAuthor.bind(this);
         this.onChangeBookEdition = this.onChangeBookEdition.bind(this);
-        this.onChangeBookPages = this.onChangeBookPages.bind(this);
         this.onChangeBookIsbn = this.onChangeBookIsbn.bind(this);
         this.onChangeBookYear = this.onChangeBookYear.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -23,7 +22,6 @@ export default class EditTodo extends Component{
             book_author : '',
             book_isbn: '',
             book_edition: '',
-            book_pages: '',
             book_year: ''
         }
     }
@@ -37,8 +35,7 @@ export default class EditTodo extends Component{
                     book_author: response.data.book_author,
                     book_isbn: response.data.book_isbn,
                     book_edition: response.data.book_edition,
-                    book_year: response.data.book_year,
-                    book_pages: response.data.book_pages
+                    book_year: response.data.book_year
                 });
             })
             .catch(function (error) {
@@ -75,11 +72,6 @@ export default class EditTodo extends Component{
             book_edition : e.target.value
         })
     }
-    onChangeBookPages(e){
-        this.setState({
-            book_pages : e.target.value
-        })
-    }
     onChangeBookIsbn(e){
         this.setState({
             book_isbn : e.target.value
@@ -100,8 +92,7 @@ export default class EditTodo extends Component{
             book_author: this.state.book_author,
             book_isbn: this.state.book_isbn,
             book_edition: this.state.book_edition,
-            book_year: this.state.book_year,
-            book_pages: this.state.book_pages
+            book_year: this.state.book_year
         };
         axios.post('http://localhost:4000/books/updatebooks/'+this.props.match.params.id, obj)
             .then(res=>console.log(res.data));
@@ -141,10 +132,6 @@ export default class EditTodo extends Component{
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Published Year"
                                value={this.state.book_year} onChange={this.onChangeBookYear}/>
-                    </div>
-                    <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Number Of Pages"
-                               value={this.state.book_pages} onChange={this.onChangeBookPages}/>
                     </div>
                     <div className="form-group">
                         <button type="submit" className="btn btn-primary btn-block">Update Book</button>

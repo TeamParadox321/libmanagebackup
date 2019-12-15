@@ -51,7 +51,7 @@ export default class IssuedBooks extends Component{
                                value={this.state.book_id} onChange={this.onChangeBookId}/>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Book ISBN" required="required"
+                        <input type="text" className="form-control" placeholder="Student ID" required="required"
                                value={this.state.stu_id} onChange={this.onChangeStudentId}/>
                     </div>
                     <div className="form-group">

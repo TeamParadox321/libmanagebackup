@@ -13,17 +13,17 @@ function Header(props) {
 
                     <div className={"navbar-brand spacer"}></div>
 
-                    <li className="dr navbar-brand nav-item dropdown">
+                    <div className="navbar-brand nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="/" id="navbardrop" data-toggle="dropdown">
                             <img src={User} height={"25px"} width={"25px"}/>
                         </a>
-                        <div className="dropdown-menu">
-                            <Link className="dr dropdown-item bg-dark text-light" to={"/student_signup"}>Student Sign Up</Link>
-                            <Link className="dr dropdown-item bg-dark text-light" to={"/student_login"}>Student Sign In</Link>
-                            <Link className="dr dropdown-item bg-dark text-light" to={"/admin_login"}>Admin Log In</Link>
-                            <Link className="dr dropdown-item bg-dark text-light" to={"/"}>Sign Out</Link>
+                        <div className="dropdown-menu dr">
+                            <Link className="dropdown-item bg-dark text-light" to={"/student_signup"}>Student Sign Up</Link>
+                            <Link className="dropdown-item bg-dark text-light" to={"/student_login"}>Student Sign In</Link>
+                            <Link className="dropdown-item bg-dark text-light" to={"/admin_login"}>Admin Log In</Link>
+                            <Link className="dropdown-item bg-dark text-light" to={"/"}>Sign Out</Link>
                         </div>
-                    </li>
+                    </div>
                 </nav>
             </div>
         </header>

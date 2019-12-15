@@ -39,7 +39,6 @@ routes.route('/addbooks').post(function (req,res) {
                     book_category : req.body.book_category,
                     book_author : req.body.book_author,
                     book_edition : req.body.book_edition,
-                    book_pages : req.body.book_pages,
                     book_isbn : req.body.book_isbn,
                     book_year : req.body.book_year,
                     book_availability: true
@@ -67,7 +66,6 @@ routes.route('/updatebooks/:id').post(function (req,res) {
             book.book_isbn = req.body.book_isbn;
             book.book_year = req.body.book_year;
             book.book_edition = req.body.book_edition;
-            book.book_pages = req.body.book_pages;
 
             book.save().then(book => {
                 res.json('Book Updated');

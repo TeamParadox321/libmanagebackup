@@ -60,6 +60,9 @@ export default class Students extends Component{
                     {this.studentList()}
                     </tbody>
                 </table>
+                <br />
+                <br />
+                <center><button type="submit" className="btn btn-primary btn-block bg-dark">Add Students</button></center>
             </div>
         )
     }
