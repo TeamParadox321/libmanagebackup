@@ -34,7 +34,7 @@ class App extends Component{
         let backDrop;
 
         if(this.state.sideDrawerOpen){
-            sideDrawer = <SideDrawer/>
+            sideDrawer = <SideDrawer click={this.backDropClickHandler}/>
             backDrop = <BackDrop click={this.backDropClickHandler}/>
         }
         return (

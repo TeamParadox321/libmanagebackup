@@ -8,13 +8,13 @@ const sideDrawer = props => (
             <div className="list-group list-group-flush">
                 <center><img src={User} className={"img"} width={"100px"} height={"100px"}/><br/>
                 <h1 className={"text-light"}>Username</h1></center>
-                <Link href="/" className="list-group-item list-group-item-action bg-dark">Home</Link>
-                <Link href="/all_students" className="list-group-item list-group-item-action bg-dark">All Students</Link>
-                <Link href="/add_students" className="list-group-item list-group-item-action bg-dark">Add Students</Link>
-                <Link href="/book_status" className="list-group-item list-group-item-action bg-dark">Book Status</Link>
-                <Link href="/all_fines" className="list-group-item list-group-item-action bg-dark">Fines</Link>
-                <Link href="/inventory_books" className="list-group-item list-group-item-action bg-dark">All Books</Link>
-                <Link href="/add_books" className="list-group-item list-group-item-action bg-dark">Add Books</Link>
+                <Link to="/" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>Home</Link>
+                <Link to="/all_students" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>All Students</Link>
+                <Link to="/add_students" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>Add Students</Link>
+                <Link to="/book_status" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>Book Status</Link>
+                <Link to="/all_fines" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>Fines</Link>
+                <Link to="/inventory_books" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>All Books</Link>
+                <Link to="/add_books" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>Add Books</Link>
             </div>
 
         </div>
