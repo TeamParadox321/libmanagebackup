@@ -73,8 +73,14 @@ export default class AddBooks extends Component{
             book_isbn: this.state.book_isbn,
             book_edition: this.state.book_edition,
             book_year: this.state.book_year
-        }
-        axios.post('http://localhost:4000/books/addbooks', newBook);
+        };
+        axios.post('http://localhost:4000/books/addbooks', newBook)
+            .then(res=>{
+                alert(res.data)
+            })
+            .catch(err=>{
+                alert(err);
+            });
         this.setState({
             book_id : '',
             book_title : '',

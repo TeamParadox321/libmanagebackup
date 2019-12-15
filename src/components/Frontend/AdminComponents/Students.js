@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import { Link,NavLink } from "react-router-dom";
-
 const Student = props => (
     <tr>
         <td> {props.book.book_id} </td>
@@ -11,13 +10,11 @@ const Student = props => (
         <td> <Link to={"/update_students"+props.student._id}> Edit </Link> </td>
     </tr>
 );
-
 export default class Students extends Component{
     constructor(props){
         super(props);
         this.state = {students: []};
     }
-
     componentDidMount(){
         axios.get('http://localhost:4000/students/')
             .then(response=>{
