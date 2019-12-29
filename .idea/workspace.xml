@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/IssueBooks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Students.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
-    </list>
+    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,13 +114,7 @@
       <workItem from="1576655469232" duration="3258000" />
       <workItem from="1577354200038" duration="1284000" />
       <workItem from="1577426392757" duration="448000" />
-    </task>
-    <task id="LOCAL-00006" summary="Component directory created">
-      <created>1575442676396</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1575442676396</updated>
+      <workItem from="1577594329557" duration="230000" />
     </task>
     <task id="LOCAL-00007" summary="Component directory created">
       <created>1575442685773</created>
@@ -473,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576430737883</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="pop up windows were added">
+      <created>1577594552212</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1577594552212</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +526,8 @@
     <MESSAGE value="Components Students, IssueBooks were created" />
     <MESSAGE value="Components Students, IssueBooks were edited" />
     <MESSAGE value="notifications added" />
-    <option name="LAST_COMMIT_MESSAGE" value="notifications added" />
+    <MESSAGE value="pop up windows were added" />
+    <option name="LAST_COMMIT_MESSAGE" value="pop up windows were added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
@@ -552,10 +539,10 @@
     </state>
     <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576514223355" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576430735496">
+    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1577594576791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576430735496" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577594576791" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
     <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1577426841629">
       <screen x="0" y="0" width="1536" height="824" />
@@ -593,10 +580,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576430743020">
+    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1577594557176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576430743020" />
+    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577594557176" />
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
     <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576409831336">
       <screen x="0" y="0" width="1536" height="824" />
