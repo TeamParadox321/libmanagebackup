@@ -24,6 +24,7 @@ const sideDrawer = props => (
                 <Link to="/book_status" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>Book Status</Link>
                 <Link to="/all_fines" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>Fines</Link>
                 <Link to="/inventory_books" className="list-group-item list-group-item-action bg-dark" onClick={props.click}>All Books</Link>
+                <button className={"list-group-item list-group-item-action bg-dark"}>Sign In</button>
             </div>
             <SSignUp/>
         </div>

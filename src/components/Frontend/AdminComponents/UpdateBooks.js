@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
 import  axios from 'axios';
 import Close from "./close.png";
-
 export default class UpdateBook extends Component{
-
     constructor(props){
         super(props);
-
         this.onChangeBookId = this.onChangeBookId.bind(this);
         this.onChangeBookTitle = this.onChangeBookTitle.bind(this);
         this.onChangeBookCategory = this.onChangeBookCategory.bind(this);
@@ -15,7 +12,6 @@ export default class UpdateBook extends Component{
         this.onChangeBookIsbn = this.onChangeBookIsbn.bind(this);
         this.onChangeBookYear = this.onChangeBookYear.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
-
         this.state = {
             book_id : '',
             book_title : '',
@@ -25,7 +21,6 @@ export default class UpdateBook extends Component{
             book_edition: '',
             book_year: ''
         };
-        this.componentDidMount();
     }
     componentDidMount(){
         axios.get('http://localhost:4000/books/'+this.props.id)
@@ -45,14 +40,11 @@ export default class UpdateBook extends Component{
             })
     }
 
-
-
     onChangeBookId(e){
         this.setState({
             book_id: e.target.value
         });
     }
-
     onChangeBookTitle(e){
         this.setState({
             book_title: e.target.value
@@ -84,7 +76,6 @@ export default class UpdateBook extends Component{
             book_year : e.target.value
         })
     }
-
     onSubmit(e){
         e.preventDefault()
         const obj = {
@@ -114,7 +105,7 @@ export default class UpdateBook extends Component{
 
     render() {
         return(
-            <div className="login-form modal-content bg-dark">
+            <div className="model-content login-form bg-dark">
                 <form onSubmit={this.onSubmit}>
                     <button onClick={this.props.ch} type="button" className="close " data-dismiss="modal"><img height={"20px"} width={"30px"} src={Close}/></button>
                     <h2 className="text-center"> Update Books </h2>

@@ -3,7 +3,7 @@ import axios from 'axios';
 import UpdateBooks from "./UpdateBooks";
 import AddBooks from "./AddBooks";
 
-const ADD = () => (
+const ADD = (props) => (
     <div className="container">
         <div className="modal close" id="myModal1" data-dismiss="modal">
             <div>
@@ -12,34 +12,23 @@ const ADD = () => (
         </div>
     </div>
 );
-var a;
-var test = false;
-const Update = props => (
-    <div className="container">
-        <div className="modal close" id="myModal3" data-dismiss="modal">
-            <div>
-                <UpdateBooks id={a} ch={change}/>
-            </div>
-        </div>
-    </div>
-);
-const change = () => {
-    a = '';
-    test = false;
-}
+
 const Book = props => (
     <tr>
         <td> {props.book.book_id} </td>
         <td> {props.book.book_title} </td>
         <td> {props.book.book_category} </td>
         <td> {props.book.book_author} </td>
-        <td> <a data-toggle="modal" data-target="#myModal3" href={""} onClick={()=>{
-            a=props.book._id;
-            test = true;
-        }}> Edit </a> </td>
+        <td> <button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target={"#abc"}> Edit </button>
+            <div className="container">
+                <div className="modal close" id="abc" data-dismiss="modal">
+                            <UpdateBooks id={props.book._id}/>
+                </div>
+            </div>
+        </td>
     </tr>
 );
-
+//<UpdateBooks id={props.book._id}/>
 export default class InverntoryBooks extends Component{
     constructor(props){
         super(props);
@@ -69,10 +58,6 @@ export default class InverntoryBooks extends Component{
         })
     }
     render(){
-        let update;
-        {if(test){
-            update = <Update/>
-        }}
         return (
             <div className="container">
 
@@ -96,11 +81,7 @@ export default class InverntoryBooks extends Component{
                 <br />
                 <center><button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal1">Add Books</button></center>
                 <ADD/>
-                {update}
             </div>
         );
-        {
-            test=false;
-        }
     }
 }
