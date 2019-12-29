@@ -1,14 +1,42 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import { Link,NavLink } from "react-router-dom";
+import UpdateBooks from "./UpdateBooks";
+import AddBooks from "./AddBooks";
 
+const ADD = () => (
+    <div className="container">
+        <div className="modal close" id="myModal1" data-dismiss="modal">
+            <div>
+                <AddBooks/>
+            </div>
+        </div>
+    </div>
+);
+var a;
+var test = false;
+const Update = props => (
+    <div className="container">
+        <div className="modal close" id="myModal3" data-dismiss="modal">
+            <div>
+                <UpdateBooks id={a} ch={change}/>
+            </div>
+        </div>
+    </div>
+);
+const change = () => {
+    a = '';
+    test = false;
+}
 const Book = props => (
     <tr>
         <td> {props.book.book_id} </td>
         <td> {props.book.book_title} </td>
         <td> {props.book.book_category} </td>
         <td> {props.book.book_author} </td>
-        <td> <Link to={"/update_books"+props.book._id}> Edit </Link> </td>
+        <td> <a data-toggle="modal" data-target="#myModal3" href={""} onClick={()=>{
+            a=props.book._id;
+            test = true;
+        }}> Edit </a> </td>
     </tr>
 );
 
@@ -17,7 +45,6 @@ export default class InverntoryBooks extends Component{
         super(props);
         this.state = {books: []};
     }
-
     componentDidMount(){
         axios.get('http://localhost:4000/books/')
             .then(response=>{
@@ -42,8 +69,13 @@ export default class InverntoryBooks extends Component{
         })
     }
     render(){
+        let update;
+        {if(test){
+            update = <Update/>
+        }}
         return (
             <div className="container">
+
                 <br/><br/><br/>
                 <h2>All Books</h2>
                 <table className="table text-light bg-secondary table-hover">
@@ -62,8 +94,13 @@ export default class InverntoryBooks extends Component{
                 </table>
                 <br />
                 <br />
-                <center><button type="submit" className="btn btn-primary btn-block bg-dark">Add Books</button></center>
+                <center><button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal1">Add Books</button></center>
+                <ADD/>
+                {update}
             </div>
-        )
+        );
+        {
+            test=false;
+        }
     }
 }

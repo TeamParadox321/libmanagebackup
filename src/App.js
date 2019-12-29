@@ -15,7 +15,6 @@ import UpdateBooks from "./components/Frontend/AdminComponents/UpdateBooks";
 import Notfound from "./components/Frontend/DesignComponents/NotFoundComponent/Notfound";
 import SideDrawer from './components/Frontend/DesignComponents/HeaderFooter/SideDrawer'
 import BackDrop from './components/Frontend/DesignComponents/HeaderFooter/BackDrop'
-import IssueBooks from "./components/Frontend/AdminComponents/IssueBooks";
 import Students from "./components/Frontend/AdminComponents/Students";
 
 class App extends Component{
@@ -48,11 +47,8 @@ class App extends Component{
                         <Route path="/" exact component={Home} />
                         <Route path="/student_login" component={UserLogin} />
                         <Route path="/admin_login" component={AdminLogin}/>
-                        <Route path="/student_signup" component={Signup}/>
                         <Route path="/inventory_books" component={InventoryBooks}/>
-                        <Route path="/add_books" component={AddBooks}/>
                         <Route path="/update_books:id" component={UpdateBooks}/>
-                        <Route path="/issue_books" component={IssueBooks}/>
                         <Route path="/all_students" component={Students}/>
                         <Route path="*" component={Notfound}/>
                     </Switch>

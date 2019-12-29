@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/close.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/routes/Book_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/Book_routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/IssueBooks.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Students.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Dashboards" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,18 +57,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\new\src\components\Frontend\AdminComponents\Dashboards" />
-      <recent name="E:\Projects\new\src\components\Frontend\DesignComponents\HeaderFooter" />
-      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src\components" />
-      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Projects\new\Server\models" />
       <recent name="E:\Projects\new\src\components\Frontend\DesignComponents\HeaderFooter" />
       <recent name="$PROJECT_DIR$/Server" />
       <recent name="$PROJECT_DIR$/src/components/Frontend/AdminComponents" />
       <recent name="$PROJECT_DIR$/src/components/Frontend/UserComponents" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\new\src\components\Frontend\AdminComponents" />
+      <recent name="E:\Projects\new\src\components\Frontend\AdminComponents\Dashboards" />
+      <recent name="E:\Projects\new\src\components\Frontend\DesignComponents\HeaderFooter" />
+      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src\components" />
+      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -112,14 +123,12 @@
       <workItem from="1576298756163" duration="8172000" />
       <workItem from="1576335425630" duration="3650000" />
       <workItem from="1576384009619" duration="7638000" />
-      <workItem from="1576417512998" duration="12188000" />
-    </task>
-    <task id="LOCAL-00005" summary="Component directory created">
-      <created>1575442538467</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1575442538467</updated>
+      <workItem from="1576417512998" duration="12491000" />
+      <workItem from="1576505101201" duration="12718000" />
+      <workItem from="1576602481835" duration="1584000" />
+      <workItem from="1576655469232" duration="3258000" />
+      <workItem from="1577354200038" duration="1284000" />
+      <workItem from="1577426392757" duration="448000" />
     </task>
     <task id="LOCAL-00006" summary="Component directory created">
       <created>1575442676396</created>
@@ -457,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576425572425</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="notifications added">
+      <created>1576430737883</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1576430737883</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,50 +539,51 @@
     <MESSAGE value="book model changed" />
     <MESSAGE value="Components Students, IssueBooks were created" />
     <MESSAGE value="Components Students, IssueBooks were edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="Components Students, IssueBooks were edited" />
+    <MESSAGE value="notifications added" />
+    <option name="LAST_COMMIT_MESSAGE" value="notifications added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="301" y="58" width="800" height="677" key="#ESLint" timestamp="1575661290092">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
-    <state x="456" y="131" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576417572579">
+    <state x="456" y="131" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576514223355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576417572579" />
+    <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576514223355" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576425571068">
+    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1576430735496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576425571068" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576430735496" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
-    <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1576352485837">
+    <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1577426841629">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="525" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576352485837" />
+    <state x="525" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577426841629" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="476" y="274" key="Github.ShareDialog/47.27.1319.741@47.27.1319.741" timestamp="1575441896660" />
-    <state width="1515" height="168" key="GridCell.Tab.0.bottom" timestamp="1576426263421">
+    <state width="1515" height="168" key="GridCell.Tab.0.bottom" timestamp="1577356293600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576426263421" />
+    <state width="1515" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577356293600" />
     <state width="1296" height="175" key="GridCell.Tab.0.bottom/47.27.1319.741@47.27.1319.741" timestamp="1575660975022" />
-    <state width="1515" height="168" key="GridCell.Tab.0.center" timestamp="1576426263420">
+    <state width="1515" height="168" key="GridCell.Tab.0.center" timestamp="1577356293600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576426263420" />
+    <state width="1515" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577356293600" />
     <state width="1296" height="175" key="GridCell.Tab.0.center/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1515" height="168" key="GridCell.Tab.0.left" timestamp="1576426263420">
+    <state width="1515" height="168" key="GridCell.Tab.0.left" timestamp="1577356293600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576426263420" />
+    <state width="1515" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577356293600" />
     <state width="1296" height="175" key="GridCell.Tab.0.left/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1515" height="168" key="GridCell.Tab.0.right" timestamp="1576426263421">
+    <state width="1515" height="168" key="GridCell.Tab.0.right" timestamp="1577356293600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576426263421" />
+    <state width="1515" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577356293600" />
     <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
     <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1575777069683">
       <screen x="47" y="27" width="1319" height="741" />
@@ -576,10 +593,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576425578529">
+    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576430743020">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576425578529" />
+    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576430743020" />
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
     <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576409831336">
       <screen x="0" y="0" width="1536" height="824" />

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import Close from './close.png'
 
 export default class AddBooks extends Component{
 
@@ -94,9 +95,11 @@ export default class AddBooks extends Component{
 
     render() {
         return(
-            <div className="login-form">
-                <form onSubmit={this.onSubmit}>
-                    <h2 className="text-center"> Add Books </h2>
+            <div className="login-form modal-content bg-dark">
+                <form className={""} onSubmit={this.onSubmit}>
+                    <button type="button" className="close " data-dismiss="modal"><img height={"20px"} width={"30px"} src={Close}/></button>
+                    <h2 className="text-center text-light"> Add Books </h2>
+                    <br/>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Book ID" required="required"
                                 value={this.state.book_id} onChange={this.onChangeBookId}/>

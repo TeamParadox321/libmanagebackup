@@ -1,12 +1,24 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import { Link,NavLink } from "react-router-dom";
+import AddBooks from "./AddBooks";
+
+const ADD = () => (
+    <div className="container">
+        <div className="modal close" id="myModal" data-dismiss="modal">
+            <div>
+                <AddBooks/>
+            </div>
+        </div>
+    </div>
+);
+
 const Student = props => (
     <tr>
-        <td> {props.book.book_id} </td>
-        <td> {props.book.book_title} </td>
-        <td> {props.book.book_category} </td>
-        <td> {props.book.book_author} </td>
+        <td> {props.student.stu_id} </td>
+        <td> {props.student.stu_name} </td>
+        <td> {props.student.stu_email} </td>
+        <td> {props.student.stu_phone_number_} </td>
         <td> <Link to={"/update_students"+props.student._id}> Edit </Link> </td>
     </tr>
 );
@@ -59,7 +71,8 @@ export default class Students extends Component{
                 </table>
                 <br />
                 <br />
-                <center><button type="submit" className="btn btn-primary btn-block bg-dark">Add Students</button></center>
+                <ADD/>
+                <center><button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal">Add Students</button></center>
             </div>
         )
     }

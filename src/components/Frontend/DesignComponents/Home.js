@@ -9,7 +9,7 @@ function Home() {
 
             <ul className="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" className="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="1"> </li>
                 <li data-target="#demo" data-slide-to="2"></li>
             </ul>
 
@@ -30,6 +30,10 @@ function Home() {
             <a className="carousel-control-next" href="#demo" data-slide="next">
                 <span className="carousel-control-next-icon" />
             </a>
+            <center>
+                <h1> Welcome to Library Management System </h1>
+                <p> You are welcome to library management system. </p>
+            </center>
 
         </div>
     );

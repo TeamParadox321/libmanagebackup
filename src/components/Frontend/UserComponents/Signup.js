@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios';
+import Close from "../AdminComponents/close.png";
 
 export default class Signup extends Component{
     constructor(props) {
@@ -77,9 +78,11 @@ export default class Signup extends Component{
 
     render() {
         return (
-            <div className="login-form">
+            <div className="login-form  modal-content bg-dark">
                 <form onSubmit={this.onSubmit}>
-                    <h2 className="text-center">Sign up</h2>
+                    <button type="button" className="close " data-dismiss="modal"><img height={"20px"} width={"30px"} src={Close}/></button>
+                    <h2 className="text-center text-light">Sign up</h2>
+                    <br/>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Student ID" required="required"
                         value={this.state.stu_id} onChange={this.onChangeStuId}/>

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import  axios from 'axios';
+import Close from "./close.png";
 
-export default class EditTodo extends Component{
+export default class UpdateBook extends Component{
 
     constructor(props){
         super(props);
@@ -23,10 +24,11 @@ export default class EditTodo extends Component{
             book_isbn: '',
             book_edition: '',
             book_year: ''
-        }
+        };
+        this.componentDidMount();
     }
     componentDidMount(){
-        axios.get('http://localhost:4000/books/'+this.props.match.params.id)
+        axios.get('http://localhost:4000/books/'+this.props.id)
             .then(response => {
                 this.setState({
                     book_id: response.data.book_id,
@@ -94,16 +96,27 @@ export default class EditTodo extends Component{
             book_edition: this.state.book_edition,
             book_year: this.state.book_year
         };
-        axios.post('http://localhost:4000/books/updatebooks/'+this.props.match.params.id, obj)
-            .then(res=>console.log(res.data));
-        this.props.history.push('/');
+        axios.post('http://localhost:4000/books/updatebooks/'+this.props.id, obj)
+            .then(res=>{
+                alert(res.data);
+                this.state = {
+                    book_id : '',
+                    book_title : '',
+                    book_category : '',
+                    book_author : '',
+                    book_isbn: '',
+                    book_edition: '',
+                    book_year: ''
+                };
+            });
+
     }
 
     render() {
         return(
-            <div className="login-form">
-
+            <div className="login-form modal-content bg-dark">
                 <form onSubmit={this.onSubmit}>
+                    <button onClick={this.props.ch} type="button" className="close " data-dismiss="modal"><img height={"20px"} width={"30px"} src={Close}/></button>
                     <h2 className="text-center"> Update Books </h2>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Book ID" required="required"
