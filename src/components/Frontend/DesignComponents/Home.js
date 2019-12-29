@@ -14,26 +14,30 @@ function Home() {
             </ul>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={IM} alt="Los Angeles" width="1900" height="700"/>
+                    <img src={IM} alt="Los Angeles" width="1900" height="650"/>
                         <div className="carousel-caption">
                             <h1>Welcome To FCT Library Management System</h1>
-                            <p>We had such a great time in LA!</p>
+                            <p>HDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
                             <button type="button" className="btn btn-primary"><h5 id={"h-btn"}>About Us</h5></button>
                             <br/><br/><br/><br/>
                         </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={IM2} alt="Chicago" width="1900" height="700"/>
+                    <img src={IM2} alt="Chicago" width="1900" height="650"/>
                         <div className="carousel-caption">
-                            <h3>Chicago</h3>
-                            <p>Thank you, Chicago!</p>
+                            <h1>Sign In Here</h1>
+                            <p>HDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
+                            <button type="button" className="btn btn-primary"><h5 id={"h-btn"}>Sign In</h5></button>
+                            <br/><br/><br/><br/>
                         </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={IM3} alt="New York" width="1900" height="700"/>
+                    <img src={IM3} alt="New York" width="1900" height="650"/>
                         <div className="carousel-caption">
-                            <h3>New York</h3>
-                            <p>We love the Big Apple!</p>
+                            <h1>Register For Library Management System</h1>
+                            <p>HDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
+                            <button type="button" className="btn btn-primary"><h5 id={"h-btn"}>Sign Up</h5></button>
+                            <br/><br/><br/><br/>
                         </div>
                 </div>
             </div>

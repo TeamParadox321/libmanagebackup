@@ -105,10 +105,10 @@ export default class UpdateBook extends Component{
 
     render() {
         return(
-            <div className="model-content login-form bg-dark">
+            <div className="model-content login-form">
                 <form onSubmit={this.onSubmit}>
                     <button onClick={this.props.ch} type="button" className="close " data-dismiss="modal"><img height={"20px"} width={"30px"} src={Close}/></button>
-                    <h2 className="text-center"> Update Books </h2>
+                    <br/><h2 className="text-center text-light"> Update Books </h2> <br/>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Book ID" required="required"
                                value={this.state.book_id} onChange={this.onChangeBookId}/>

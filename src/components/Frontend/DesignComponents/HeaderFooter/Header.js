@@ -16,7 +16,7 @@ function Header(props) {
     return (
         <header>
             <div>
-                <nav className="navb navbar navbar-expand-md navbar-dark bg-dark">
+                <nav className="navb navbar navbar-expand-md navbar-dark">
                     <span className="icon navbar-brand navbar-toggler-icon" onClick={props.click}></span>
                     <Link to={"/"} className={""}> <h5 className={"header-text navbar-brand"}>Library Management System </h5> </Link>
                     <div className={"navbar-brand spacer"}></div>

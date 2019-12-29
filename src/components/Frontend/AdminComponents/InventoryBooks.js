@@ -19,16 +19,15 @@ const Book = props => (
         <td> {props.book.book_title} </td>
         <td> {props.book.book_category} </td>
         <td> {props.book.book_author} </td>
-        <td> <button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target={"#abc"}> Edit </button>
+        <td> <button type="button" className="btn" data-toggle="modal" data-target={`#${props.book._id}`}> Edit </button>
             <div className="container">
-                <div className="modal close" id="abc" data-dismiss="modal">
+                <div className="modal close" id={`${props.book._id}`} data-dismiss="modal">
                             <UpdateBooks id={props.book._id}/>
                 </div>
             </div>
         </td>
     </tr>
 );
-//<UpdateBooks id={props.book._id}/>
 export default class InverntoryBooks extends Component{
     constructor(props){
         super(props);
@@ -54,6 +53,7 @@ export default class InverntoryBooks extends Component{
     }
     bookList(){
         return this.state.books.map(function (currentBook, i) {
+            {console.log(currentBook)}
             return <Book book={currentBook} key={i} />
         })
     }
@@ -61,9 +61,10 @@ export default class InverntoryBooks extends Component{
         return (
             <div className="container">
 
-                <br/><br/><br/>
-                <h2>All Books</h2>
-                <table className="table text-light bg-secondary table-hover">
+                <br/><br/>
+                <center><b><h2 color={"red"}>All Books</h2></b></center>
+                <br/>
+                <table className="table text-light table-hover">
                     <thead>
                     <tr>
                         <th>Book ID</th>
@@ -81,6 +82,7 @@ export default class InverntoryBooks extends Component{
                 <br />
                 <center><button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal1">Add Books</button></center>
                 <ADD/>
+                <br/><br/><br/>
             </div>
         );
     }
