@@ -14,7 +14,7 @@ function Home() {
             </ul>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={IM} alt="Los Angeles" width="1900" height="650"/>
+                    <img src={IM} alt="Los Angeles" width="1500" height="710"/>
                         <div className="carousel-caption">
                             <h1>Welcome To FCT Library Management System</h1>
                             <p>HDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
@@ -23,7 +23,7 @@ function Home() {
                         </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={IM2} alt="Chicago" width="1900" height="650"/>
+                    <img src={IM2} alt="Chicago" width="1500" height="710"/>
                         <div className="carousel-caption">
                             <h1>Sign In Here</h1>
                             <p>HDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
@@ -32,7 +32,7 @@ function Home() {
                         </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={IM3} alt="New York" width="1900" height="650"/>
+                    <img src={IM3} alt="New York" width="1500" height="710"/>
                         <div className="carousel-caption">
                             <h1>Register For Library Management System</h1>
                             <p>HDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>

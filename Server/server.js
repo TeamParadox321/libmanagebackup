@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const PORT = 4000;
-const stuRoutes = require('./routes/Student_routes');
+const usrRoutes = require('./routes/User_routes');
 const bookRoutes = require('./routes/Book_routes');
 const issuedBookRoutes = require('./routes/Issue_book_routes');
 
@@ -23,7 +23,7 @@ connection.once('open', function () {
 
 
 app.use('/books', bookRoutes);
-app.use('/students', stuRoutes);
+app.use('/users', usrRoutes);
 app.use('/issued_books',issuedBookRoutes);
 
 

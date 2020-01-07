@@ -13,41 +13,41 @@ const ADD = () => (
     </div>
 );
 
-const Student = props => (
+const User = props => (
     <tr>
-        <td> {props.student.stu_id} </td>
-        <td> {props.student.stu_name} </td>
-        <td> {props.student.stu_email} </td>
-        <td> {props.student.stu_phone_number_} </td>
-        <td> <Link to={"/update_students"+props.student._id}> Edit </Link> </td>
+        <td> {props.user.user_id} </td>
+        <td> {props.user.user_name} </td>
+        <td> {props.user.user_email} </td>
+        <td> {props.user.user_phone_number} </td>
+        <td> <Link to={"/update_students"+props.user._id}> Edit </Link> </td>
     </tr>
 );
-export default class Students extends Component{
+export default class Users extends Component{
     constructor(props){
         super(props);
-        this.state = {students: []};
+        this.state = {users: []};
     }
     componentDidMount(){
-        axios.get('http://localhost:4000/students/')
+        axios.get('http://localhost:4000/users/')
             .then(response=>{
-                this.setState({students: response.data})
+                this.setState({users: response.data})
             })
             .catch(function (error) {
                 console.log(error)
             });
     }
     componentDidUpdate(){
-        axios.get('http://localhost:4000/students/')
+        axios.get('http://localhost:4000/users/')
             .then(response=>{
-                this.setState({students: response.data})
+                this.setState({users: response.data})
             })
             .catch(function (error) {
                 console.log(error)
             });
     }
     studentList(){
-        return this.state.students.map(function (currentStudent, i) {
-            return <Student student={currentStudent} key={i} />
+        return this.state.users.map(function (currentUser, i) {
+            return <User user={currentUser} key={i} />
         })
     }
     render(){

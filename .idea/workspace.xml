@@ -2,15 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Server/models/User_model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/routes/User_routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/_media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/mixins/_border-radius.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/mixins/_screen-reader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/mixins/_visibility.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap/utilities/_stretched-link.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bg_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_spinners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_toasts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_deprecate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_overflow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_stretched-link.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/vendor/_rfs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/AllBooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Books.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/models/Admin_model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/models/Student_model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/routes/Book_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/Book_routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/routes/Issue_book_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/Issue_book_routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/routes/Student_routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/SideDrawer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/UserLogin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +180,11 @@
       <recent name="$PROJECT_DIR$/src/components/Frontend/UserComponents" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\new\public\images" />
+      <recent name="E:\Projects\new\public" />
       <recent name="E:\Projects\new\src\components\Frontend\AdminComponents" />
       <recent name="E:\Projects\new\src\components\Frontend\AdminComponents\Dashboards" />
       <recent name="E:\Projects\new\src\components\Frontend\DesignComponents\HeaderFooter" />
-      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src\components" />
-      <recent name="C:\Users\harsh\Desktop\FCT PROJECT\librarynew\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -129,6 +246,13 @@
       <workItem from="1577426392757" duration="448000" />
       <workItem from="1577594329557" duration="16594000" />
       <workItem from="1577612905045" duration="1743000" />
+      <workItem from="1578135245355" duration="502000" />
+      <workItem from="1578140723759" duration="7260000" />
+      <workItem from="1578180315780" duration="3610000" />
+      <workItem from="1578213480531" duration="13014000" />
+      <workItem from="1578227405771" duration="603000" />
+      <workItem from="1578262165921" duration="2808000" />
+      <workItem from="1578323049185" duration="8846000" />
     </task>
     <task id="LOCAL-00009" summary="Frontend directory deleted">
       <created>1575466336551</created>
@@ -551,43 +675,43 @@
     </state>
     <state x="296" y="34" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1577597375783" />
     <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
-    <state x="456" y="131" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576514223355">
+    <state x="456" y="131" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578214465365">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576514223355" />
+    <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578214465365" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
     <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1577602865649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577602865649" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
-    <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1577426841629">
+    <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1578213618000">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="525" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577426841629" />
+    <state x="525" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578213618000" />
     <state x="476" y="274" key="Github.ShareDialog" timestamp="1575441896660">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="476" y="274" key="Github.ShareDialog/47.27.1319.741@47.27.1319.741" timestamp="1575441896660" />
-    <state width="1515" height="168" key="GridCell.Tab.0.bottom" timestamp="1577615607801">
+    <state width="1515" height="168" key="GridCell.Tab.0.bottom" timestamp="1578332712742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577615607801" />
+    <state width="1515" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578332712742" />
     <state width="1296" height="175" key="GridCell.Tab.0.bottom/47.27.1319.741@47.27.1319.741" timestamp="1575660975022" />
-    <state width="1515" height="168" key="GridCell.Tab.0.center" timestamp="1577615607801">
+    <state width="1515" height="168" key="GridCell.Tab.0.center" timestamp="1578332712742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577615607801" />
+    <state width="1515" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578332712742" />
     <state width="1296" height="175" key="GridCell.Tab.0.center/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1515" height="168" key="GridCell.Tab.0.left" timestamp="1577615607801">
+    <state width="1515" height="168" key="GridCell.Tab.0.left" timestamp="1578332712742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577615607801" />
+    <state width="1515" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578332712742" />
     <state width="1296" height="175" key="GridCell.Tab.0.left/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1515" height="168" key="GridCell.Tab.0.right" timestamp="1577615607801">
+    <state width="1515" height="168" key="GridCell.Tab.0.right" timestamp="1578332712742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577615607801" />
+    <state width="1515" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578332712742" />
     <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
     <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1575777069683">
       <screen x="47" y="27" width="1319" height="741" />
@@ -607,5 +731,9 @@
     </state>
     <state x="497" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1576409831336" />
     <state x="474" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/47.27.1319.741@47.27.1319.741" timestamp="1576232313143" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1578144349629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1578144349629" />
   </component>
 </project>
