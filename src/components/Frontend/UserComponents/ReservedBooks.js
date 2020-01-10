@@ -5,10 +5,7 @@ import {Link} from "react-router-dom";
 const Book = props => (
     <tr>
         <td> <Link to={'/book/'+props.book._id}>{props.book.book_id}</Link>  </td>
-        <td> {props.book.book_title} </td>
-        <td> {props.book.book_category} </td>
-        <td> {props.book.book_author} </td>
-        <td> {props.book.book_availability.toString()} </td>
+        <td> {props.book.reserved_date} </td>
     </tr>
 );
 export default class AllBooks extends Component{
@@ -17,7 +14,7 @@ export default class AllBooks extends Component{
         this.state = {books: []};
     }
     componentDidMount(){
-        axios.get('http://localhost:4000/books/')
+        axios.post('http://localhost:4000/users/reserved_books', {token:localStorage.usertoken})
             .then(response=>{
                 this.setState({books: response.data})
             })
@@ -26,7 +23,7 @@ export default class AllBooks extends Component{
             });
     }
     componentDidUpdate(){
-        axios.get('http://localhost:4000/books/')
+        axios.post('http://localhost:4000/users/reserved_books',{token:localStorage.usertoken})
             .then(response=>{
                 this.setState({books: response.data})
             })
@@ -43,15 +40,12 @@ export default class AllBooks extends Component{
     render(){
         return (
             <div className="container">
-                <center><b><h4 className={"p-3 my-3 table text-white"} color={"red"}>All Books</h4></b></center>
+                <center><b><h4 className={"p-3 my-3 table text-white"} color={"red"}>Reserved Books</h4></b></center>
                 <table className="table text-light table-hover">
                     <thead>
                     <tr>
                         <th>Book ID</th>
-                        <th>Book Title</th>
-                        <th>Category</th>
-                        <th>Author</th>
-                        <th>Availability</th>
+                        <th>Reserved Date</th>
                     </tr>
                     </thead>
                     <tbody>

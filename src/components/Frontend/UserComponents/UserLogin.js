@@ -37,9 +37,8 @@ export default class UserLogin extends Component{
                     localStorage.setItem('usertoken', res.data.token);
                     localStorage.setItem('userrole', res.data.role);
                     localStorage.setItem('userid', res.data.id);
+                    this.props.fs();
                     alert(res.data.id+' '+res.data.role);
-                    this.props.history.push('/');
-                    return res.data.token
                 }else{
                     alert(res.data);
                 }
@@ -72,7 +71,6 @@ export default class UserLogin extends Component{
                     <div className="form-group">
                         <button type={"submit"} className={"btn btn-primary btn-block"}>Log in</button>
                     </div>
-
                 </form>
             </div>
         );

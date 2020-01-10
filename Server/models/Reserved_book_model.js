@@ -5,11 +5,16 @@ let ReservedBook = new Schema({
     book_id: {
         type: String
     },
-    studnet_id: {
+    user_id: {
         type: String
     },
     reserved_date: {
-        type: Date
+        type: Date,
+        default: new Date()
+    },
+    ref_id: {
+        type: String,
+        default: 'aa'
     }
 });
 

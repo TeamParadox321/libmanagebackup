@@ -21,6 +21,24 @@ routes.route('/').get(function (req, res) {
         }
     })
 });
+routes.route('/profile').post(function (req, res) {
+    console.log('ok  '+req.body.token);
+    if(req.body.token!=null){
+        console.log(req.body.token);
+        var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+        User.findOne({
+            user_id: decoded.user_id
+        })
+            .then(user=>{
+                if(user){
+                    res.send(user);
+                }
+            })
+            .catch(err=>{
+                res.send(err);
+            })
+    }
+});
 
 routes.route('/check').post(function (req, res) {
     var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
@@ -99,5 +117,52 @@ routes.route('/user_signup').post(function (req,res) {
             }
         })
 });
+
+routes.route('/reserved_books').post(function (req, res) {
+    var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+    ReservedBooks.find({
+        user_id: decoded.user_id
+    }).then(books=>{
+        if(books){
+            res.json(books)
+        }
+    });
+});
+
+routes.route('/reserve').post(function (req, res) {
+    var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+    User.findOne({
+        user_id: decoded.user_id
+    }).then(user=>{
+        if(user){
+            ReservedBooks.findOne({
+                book_id: req.body.book_id
+            }).then(book=>{
+                if(!book){
+                    let b = new ReservedBooks({
+                        book_id: req.body.book_id,
+                        user_id: decoded.user_id,
+                        ref_id: req.body.ref_id
+                    });
+                    Book.findById(req.body.ref_id, function (err, bk) {
+                        if (bk) {
+                            bk.book_availability = false;
+                            bk.save();
+                        }
+                    });
+                    b.save()
+                        .then(user => {
+                            res.send('Reserved successfully...');
+                        })
+                        .catch(err=>{
+                            res.send('Reserving failed...');
+                        });
+                }else {
+                    res.send('The book is already reserved...');
+                }
+            });
+        }
+    })
+})
 
 module.exports = routes;
