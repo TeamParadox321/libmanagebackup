@@ -8,13 +8,8 @@ import Header from "./components/Frontend/DesignComponents/HeaderFooter/Header";
 import Footer from "./components/Frontend/DesignComponents/HeaderFooter/Footer";
 import UserLogin from "./components/Frontend/UserComponents/UserLogin";
 import Signup from "./components/Frontend/UserComponents/Signup";
-import AdminLogin from "./components/Frontend/AdminComponents/AdminLogin";
 import InventoryBooks from "./components/Frontend/AdminComponents/InventoryBooks";
-import AddBooks from "./components/Frontend/AdminComponents/AddBooks";
-import UpdateBooks from "./components/Frontend/AdminComponents/UpdateBooks";
 import Notfound from "./components/Frontend/DesignComponents/NotFoundComponent/Notfound";
-import SideDrawer from './components/Frontend/DesignComponents/HeaderFooter/SideDrawer'
-import BackDrop from './components/Frontend/DesignComponents/HeaderFooter/BackDrop'
 import Users from "./components/Frontend/AdminComponents/Users";
 import User from "./components/Frontend/DesignComponents/HeaderFooter/user.png"
 import Books from "./components/Frontend/UserComponents/Books";
@@ -23,6 +18,8 @@ import Profile from "./components/Frontend/DesignComponents/Profile";
 import axios from "axios";
 import Book from "./components/Frontend/UserComponents/Book";
 import ReservedBooks from "./components/Frontend/UserComponents/ReservedBooks";
+import AllReservedBooks from "./components/Frontend/AdminComponents/AllReservedBooks";
+import AllIssuedBooks from "./components/Frontend/AdminComponents/AllIssuedBooks";
 
 
 class App extends Component{
@@ -80,79 +77,87 @@ class App extends Component{
         let id = localStorage.userid;
         return (
             <Router>
-                <Header/>
-                <div className="wrapper d-flex align-items-stretch">
-                    <nav id="sidebar">
-                        <div className="custom-menu">
+                <switch>
+                    <Header/>
+                    <div className="wrapper d-flex align-items-stretch">
+                        <nav id="sidebar">
+                            <div className="custom-menu">
+                            </div>
+                            <div className="img bg-wrap text-center py-4">
+                                <div className="user-logo">
+                                    <img src={User} height={"30px"} width={"30px"} className="img"/>
+                                    <h3>{id!=null ? id : 'Unknown'}</h3>
+                                </div>
+                            </div>
+                            <ul className="list-unstyled components mb-5">
+                                <li className="active">
+                                    <Link to="/"><span className="fa fa-home mr-3"></span> Home</Link>
+                                </li>
+                                {localStorage.usertoken!=null ? <li className="active">
+                                    <Link to="/profile"><span className="fa fa-gift mr-3"></span> Profile </Link>
+                                </li> : '' }
+                                <li className="active">
+                                    <Link to="/books"><span className="fa fa-trophy mr-3"></span> Books </Link>
+                                </li>
+                                {localStorage.usertoken!=null ? <li className="active">
+                                    <Link to="/students"><span className="fa fa-gift mr-3"></span> Students </Link>
+                                </li> : '' }
+                                {localStorage.usertoken==null ? (<wrapper>
+                                    <li className="active">
+                                        <a data-toggle="modal" data-target="#signUp"><span className="fa fa-sign-in mr-3"></span> Sign Up </a>
+                                    </li>
+                                    <li  className="active">
+                                    <a data-toggle="modal" data-target="#signIn"><span className="fa fa-sign-in mr-3"></span> Sign In </a>
+                                </li></wrapper>) : ' '}
+                                {this.state.token!=null ? (<li className="active">
+                                    <a onClick={()=>{
+                                        localStorage.removeItem("usertoken");
+                                        localStorage.removeItem("userrole");
+                                        localStorage.removeItem("userid");
+                                        this.nullState();
+                                    }
+                                    }><span className="fa fa-sign-out mr-3"> </span> Sign Out</a>
+                                </li>) : ''}
+                                <button onClick={()=>{
+                                    alert(localStorage.userrole+'  '+this.state.token);
+                                }}> check </button>
+                            </ul>
+
+                        </nav>
+
+                        <div id="content" className="">
+
+                            <Route path={"/"} exact={""} component={Home}/>
+                            <Route path={"/all_books"} component={AllBooks}/>
+                            <Route path={"/book/:id"} component={Book}/>
+                            <Route path={"/books"} component={Books}/>
+                            {localStorage.usertoken!=null ? <wrapper>
+                                <Route path={"/profile"} component={Profile}/>
+                                <Route path={"/students"} component={Users}/>
+                                <Route path={"/inventory_books"} component={InventoryBooks}/>
+                                <Route path={"/reserved_books"} component={ReservedBooks}/>
+                                <Route path={"/all_reserved_books"} component={AllReservedBooks}/>
+                                <Route path={"/all_issued_books"} component={AllIssuedBooks}/>
+                                </wrapper> : '' }
 
                         </div>
-                        <div className="img bg-wrap text-center py-4">
-                            <div className="user-logo">
-                                <img src={User} height={"30px"} width={"30px"} className="img"/>
-                                <h3>{id!=null ? id : 'Unknown'}</h3>
+                    </div>
+                    <div className="container">
+                        <div className="modal close" id="signUp" data-dismiss="modal">
+                            <div>
+                                <Signup/>
                             </div>
                         </div>
-                        <ul className="list-unstyled components mb-5">
-                            <li className="active">
-                                <Link to="/"><span className="fa fa-home mr-3"></span> Home</Link>
-                            </li>
-                            {localStorage.usertoken!=null ? <li>
-                                <Link to="/profile"><span className="fa fa-gift mr-3"></span> Profile </Link>
-                            </li> : '' }
-                            <li>
-                                <Link to="/books"><span className="fa fa-trophy mr-3"></span> Books </Link>
-                            </li>
-
-                            {localStorage.usertoken==null ? (<wrapper>
-                                <li>
-                                    <a data-toggle="modal" data-target="#signUp"><span className="fa fa-sign-in mr-3"></span> Sign Up </a>
-                                </li>
-                                <li>
-                                <a data-toggle="modal" data-target="#signIn"><span className="fa fa-sign-in mr-3"></span> Sign In </a>
-                            </li></wrapper>) : ' '}
-                            {this.state.token!=null ? (<li>
-                                <a onClick={()=>{
-                                    alert('token : '+localStorage.usertoken);
-                                    localStorage.removeItem("usertoken");
-                                    localStorage.removeItem("userrole");
-                                    localStorage.removeItem("userid");
-                                    this.nullState();
-                                }
-                                }><span className="fa fa-sign-out mr-3"> </span> Sign Out</a>
-                            </li>) : ''}
-                            <button onClick={()=>{
-                                alert(this.state.token);
-                            }}> check </button>
-                        </ul>
-
-                    </nav>
-
-                    <div id="content" className="p-4 p-md-5 pt-5">
-                        <Route path={"/"} exact={""} component={Home}/>
-                        <Route path={"/books"} component={Books}/>
-                        <Route path={"/all_books"} component={AllBooks}/>
-                        <Route path={"/profile"} component={Profile}/>
-                        <Route path={"/students"} component={Users}/>
-                        <Route path={"/inventory_books"} component={InventoryBooks}/>
-                        <Route path={"/book/:id"} component={Book}/>
-                        <Route path={"/reserved_books"} component={ReservedBooks}/>
                     </div>
-                </div>
-                <div className="container">
-                    <div className="modal close" id="signUp" data-dismiss="modal">
-                        <div>
-                            <Signup/>
+                    <div className="container">
+                        <div className="modal close" id="signIn" data-dismiss="modal">
+                            <div>
+                                <UserLogin fs={this.fullState}/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="container">
-                    <div className="modal close" id="signIn" data-dismiss="modal">
-                        <div>
-                            <UserLogin fs={this.fullState}/>
-                        </div>
-                    </div>
-                </div>
-                <Footer/>
+                    <Footer/>
+                </switch>
             </Router>
         );
     }

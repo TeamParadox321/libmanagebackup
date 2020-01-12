@@ -43,9 +43,9 @@ export default class AllBooks extends Component{
     render(){
         return (
             <div className="container">
-                <center><b><h4 className={"p-3 my-3 table text-white"} color={"red"}>All Books</h4></b></center>
-                <table className="table text-light table-hover">
-                    <thead>
+                <center><b><h2 className={"p-3 my-3 text-dark"} color={"red"}>All Books</h2></b></center>
+                <table id="example" class="table bg-white table-striped table-bordered border-0 table-hover">
+                    <thead className="thead-dark">
                     <tr>
                         <th>Book ID</th>
                         <th>Book Title</th>

@@ -19,7 +19,6 @@ const User = props => (
         <td> {props.user.user_name} </td>
         <td> {props.user.user_email} </td>
         <td> {props.user.user_phone_number} </td>
-        <td> <Link to={"/update_students"+props.user._id}> Edit </Link> </td>
     </tr>
 );
 export default class Users extends Component{
@@ -53,8 +52,12 @@ export default class Users extends Component{
     render(){
         return (
             <div className="container">
-                <br/><br/><br/>
-                <h2>All Students</h2>
+                <div style={{"display": "flex","max-height": "100px"}}>
+                    <button style={{"max-height":"40px","margin-top":"40px"}} type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#myModal1">Add Student</button>
+                    <div className={"spacer"}></div>
+                    <center><b><h2 className={"p-3 my-3 text-dark"} color={"red"}>All Students</h2></b></center>
+                    <div className={"spacer"}></div>
+                </div>
                 <table className="table text-light bg-secondary table-hover">
                     <thead>
                     <tr>
@@ -62,7 +65,6 @@ export default class Users extends Component{
                         <th>Name</th>
                         <th>Email</th>
                         <th>Phone Number</th>
-                        <th>Update</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -72,7 +74,6 @@ export default class Users extends Component{
                 <br />
                 <br />
                 <ADD/>
-                <center><button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal">Add Students</button></center>
             </div>
         )
     }

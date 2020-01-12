@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/ReservedBooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AllIssuedBooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AllReservedBooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/models/Reserved_book_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/models/Reserved_book_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/models/Issued_book_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/models/Issued_book_model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/routes/User_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/routes/User_routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AdminLogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/ImageSlide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Section.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/AllBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/AllBooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/ReservedBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/ReservedBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Frontend/UserComponents/UserLogin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mern-login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -138,14 +146,9 @@
       <workItem from="1578262165921" duration="2808000" />
       <workItem from="1578323049185" duration="8846000" />
       <workItem from="1578358119960" duration="166000" />
-      <workItem from="1578625511000" duration="19799000" />
-    </task>
-    <task id="LOCAL-00011" summary="app.js edited">
-      <created>1575616756061</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1575616756061</updated>
+      <workItem from="1578625511000" duration="20239000" />
+      <workItem from="1578664814532" duration="5080000" />
+      <workItem from="1578800464414" duration="16705000" />
     </task>
     <task id="LOCAL-00012" summary="app.js edited">
       <created>1575617180727</created>
@@ -483,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578358235551</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Reserving function was created">
+      <created>1578646783767</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1578646783768</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +564,8 @@
     <MESSAGE value="nothing changed" />
     <MESSAGE value="Home page designed" />
     <MESSAGE value="Login fuction was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login fuction was added" />
+    <MESSAGE value="Reserving function was created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reserving function was created" />
   </component>
   <component name="WindowStateProjectService">
     <state x="296" y="34" width="800" height="677" key="#ESLint" timestamp="1577597375783">
@@ -562,15 +573,15 @@
     </state>
     <state x="296" y="34" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1577597375783" />
     <state x="301" y="58" width="800" height="677" key="#ESLint/47.27.1319.741@47.27.1319.741" timestamp="1575661290092" />
-    <state x="456" y="131" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578214465365">
+    <state x="456" y="131" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578808054349">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578214465365" />
+    <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578808054349" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1578358234865">
+    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1578646780701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578358234865" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578646780701" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
     <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1578631246894">
       <screen x="0" y="0" width="1536" height="824" />
@@ -580,25 +591,25 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="476" y="274" key="Github.ShareDialog/47.27.1319.741@47.27.1319.741" timestamp="1575441896660" />
-    <state width="1515" height="168" key="GridCell.Tab.0.bottom" timestamp="1578628092370">
+    <state width="1515" height="168" key="GridCell.Tab.0.bottom" timestamp="1578815022299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578628092370" />
+    <state width="1515" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578815022299" />
     <state width="1296" height="175" key="GridCell.Tab.0.bottom/47.27.1319.741@47.27.1319.741" timestamp="1575660975022" />
-    <state width="1515" height="168" key="GridCell.Tab.0.center" timestamp="1578628092369">
+    <state width="1515" height="168" key="GridCell.Tab.0.center" timestamp="1578815022299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578628092369" />
+    <state width="1515" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578815022299" />
     <state width="1296" height="175" key="GridCell.Tab.0.center/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1515" height="168" key="GridCell.Tab.0.left" timestamp="1578628092369">
+    <state width="1515" height="168" key="GridCell.Tab.0.left" timestamp="1578815022298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578628092369" />
+    <state width="1515" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578815022298" />
     <state width="1296" height="175" key="GridCell.Tab.0.left/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state width="1515" height="168" key="GridCell.Tab.0.right" timestamp="1578628092369">
+    <state width="1515" height="168" key="GridCell.Tab.0.right" timestamp="1578815022299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578628092369" />
+    <state width="1515" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578815022299" />
     <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
     <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1575777069683">
       <screen x="47" y="27" width="1319" height="741" />
@@ -608,10 +619,10 @@
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1578358242891">
+    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1578646791243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578358242891" />
+    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578646791243" />
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
     <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576409831336">
       <screen x="0" y="0" width="1536" height="824" />

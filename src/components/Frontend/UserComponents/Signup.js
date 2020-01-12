@@ -79,14 +79,14 @@ export default class Signup extends Component{
 
     }
 
-
     render() {
         return (
-            <div className="login-form  modal-content">
+            <div className="login-form">
+                <div className={"frm"}>
+                    <button type="button" className="close " data-dismiss="modal" style={{"padding-right": "10px", "color": "white"}}><i className="fa fa-close"/></button>
+                    <center><h2 className="text-light"> Sign up</h2></center>
+                </div>
                 <form onSubmit={this.onSubmit}>
-                    <button type="button" className="close " data-dismiss="modal"><img height={"20px"} width={"30px"} src={Close}/></button>
-                    <h2 className="text-center text-light">Sign up</h2>
-                    <br/>
                     <div className="form-group">
                         <p className={"txt"}>Student Id :</p>
                         <input type="text" className="form-control" placeholder="Student ID" required="required"
@@ -115,7 +115,7 @@ export default class Signup extends Component{
                         value={this.state.user_confirm_password} onChange={this.onConfirmUsrPassword}/>
                     </div> <br/>
                     <div className="form-group">
-                        <button type="submit" className="btn btn-primary btn-block">Sign up</button>
+                        <button type={"submit"} className={"btn btn-primary btn-block"} style={{"background": "#400000"}}>Sign up</button>
                     </div>
                 </form>
             </div>

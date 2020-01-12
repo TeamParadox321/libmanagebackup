@@ -129,6 +129,27 @@ routes.route('/reserved_books').post(function (req, res) {
     });
 });
 
+routes.route('/all_reserved_books').post(function (req, res) {
+    var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+    User.find({
+        user_id: decoded.user_id
+    })
+        .then(user=>{
+            if(user){
+                ReservedBooks.find(function (err, books) {
+                    if(err){
+                        console.log(err);
+                    }else{
+                        res.json(books);
+                    }
+                })
+            }
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+});
+
 routes.route('/reserve').post(function (req, res) {
     var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
     User.findOne({
@@ -139,10 +160,13 @@ routes.route('/reserve').post(function (req, res) {
                 book_id: req.body.book_id
             }).then(book=>{
                 if(!book){
+                    var date = new Date();
+                    //date.replace("IST", "SLST");
                     let b = new ReservedBooks({
                         book_id: req.body.book_id,
                         user_id: decoded.user_id,
-                        ref_id: req.body.ref_id
+                        ref_id: req.body.ref_id,
+                        reserved_date: date
                     });
                     Book.findById(req.body.ref_id, function (err, bk) {
                         if (bk) {
@@ -163,6 +187,62 @@ routes.route('/reserve').post(function (req, res) {
             });
         }
     })
-})
+});
+
+routes.route('/issue').post(function (req, res) {
+    var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+    User.findOne({
+        user_id: decoded.user_id
+    }).then(user=>{
+        if(user){
+            ReservedBooks.deleteOne({
+                book_id: req.body.book_id
+            },
+                function (err, obj) {
+                    if(err){
+                        console.log(err)
+                    }else{
+                        var date = new Date();
+                        //date.replace("IST", "SLST");
+                        date.setDate(date.getDate() + 7);
+                        let issue = new IssedBooks({
+                            book_id: req.body.book_id,
+                            user_id: req.body.user_id,
+                            ref_id: req.body.ref_id,
+                            expected_return_date: date
+                        });
+                        issue.save()
+                            .then(user => {
+                                res.send('Issued successfully...');
+                            })
+                            .catch(err=>{
+                                res.send('Issuing failed...');
+                            });
+                    }
+                })
+        }
+    })
+});
+
+routes.route('/all_issued_books').post(function (req, res) {
+    var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+    User.find({
+        user_id: decoded.user_id
+    })
+        .then(user=>{
+            if(user){
+                IssedBooks.find(function (err, books) {
+                    if(err){
+                        console.log(err);
+                    }else{
+                        res.json(books);
+                    }
+                })
+            }
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+});
 
 module.exports = routes;

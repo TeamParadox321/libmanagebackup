@@ -4,17 +4,18 @@ let IssuedBook = new Schema({
     book_id: {
         type: String
     },
-    student_id: {
-        type: String
-    },
-    book_title: {
+    user_id: {
         type: String
     },
     issued_date: {
-        type: Date
+        type: Date,
+        default: new Date()
     },
     expected_return_date: {
         type: Date
+    },
+    ref_id: {
+        type: String
     }
 });
 module.exports = mongoose.model('issued_books', IssuedBook);

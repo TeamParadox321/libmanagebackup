@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import UpdateBooks from "./UpdateBooks";
 import AddBooks from "./AddBooks";
+import {Link} from "react-router-dom";
 
 const ADD = (props) => (
     <div className="container">
@@ -15,17 +16,10 @@ const ADD = (props) => (
 
 const Book = props => (
     <tr>
-        <td> {props.book.book_id} </td>
+        <td> <Link to={'/book/'+props.book._id}>{props.book.book_id}</Link> </td>
         <td> {props.book.book_title} </td>
         <td> {props.book.book_category} </td>
         <td> {props.book.book_author} </td>
-        <td> <button type="button" className="btn" data-toggle="modal" data-target={`#${props.book._id}`}> Edit </button>
-            <div className="container">
-                <div className="modal close" id={`${props.book._id}`} data-dismiss="modal">
-                            <UpdateBooks id={props.book._id}/>
-                </div>
-            </div>
-        </td>
     </tr>
 );
 export default class InverntoryBooks extends Component{
@@ -60,29 +54,27 @@ export default class InverntoryBooks extends Component{
     render(){
         return (
             <div className="container">
-
-                <br/><br/>
-                <center><b><h2 color={"red"}>All Books</h2></b></center>
-                <br/>
-                <table className="table text-light table-hover">
-                    <thead>
+                <div style={{"display": "flex","max-height": "100px"}}>
+                    <button style={{"max-height":"40px","margin-top":"40px"}} type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#myModal1">Add Books</button>
+                    <div className={"spacer"}></div>
+                    <center><b><h2 className={"p-3 my-3 text-dark"} color={"red"}>All Books</h2></b></center>
+                    <div className={"spacer"}></div>
+                </div>
+                <table id="example" className="table bg-white table-striped table-bordered border-0 table-hover">
+                    <thead className="thead-dark">
                     <tr>
                         <th>Book ID</th>
                         <th>Book Title</th>
                         <th>Category</th>
                         <th>Author</th>
-                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
                         {this.bookList()}
                     </tbody>
                 </table>
-                <br />
-                <br />
-                <center><button type="button" className="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal1">Add Books</button></center>
                 <ADD/>
-                <br/><br/><br/>
+                <br/>
             </div>
         );
     }

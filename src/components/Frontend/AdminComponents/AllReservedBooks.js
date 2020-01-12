@@ -5,8 +5,14 @@ import {Link} from "react-router-dom";
 const Book = props => (
     <tr>
         <td> <Link to={'/book/'+props.book._id}>{props.book.book_id}</Link>  </td>
+        <td> {props.book.user_id} </td>
         <td> {formatDate(props.book.reserved_date)} </td>
-        <td> <button type="button" className="btn btn-outline-danger">Cancel</button> </td>
+        <td>
+            <button onClick={()=>{
+                issue(props.book.user_id, props.book.book_id, props.book.ref_id)
+            }} type="button" className="btn btn-outline-success">Issue</button> &nbsp;
+            <button type="button" className="btn btn-outline-danger">Cancel</button>
+        </td>
     </tr>
 );
 function formatDate(dt) {
@@ -25,13 +31,28 @@ function formatDate(dt) {
     var sec = date.getSeconds();
     return day + ' ' + monthNames[monthIndex] + ' ' + year + ' ' + hour + ':'  + min + ':' + sec;
 }
-export default class ReservedBooks extends Component{
+function issue(user_id, book_id, ref_id){
+    axios.post('http://localhost:4000/users/issue', {
+        token:localStorage.usertoken,
+        book_id: book_id,
+        user_id: user_id,
+        ref_id: ref_id
+    })
+        .then(response=>{
+            alert(response.data)
+        })
+        .catch(function (error) {
+            alert(error)
+        });
+}
+
+export default class AllReservedBooks extends Component{
     constructor(props){
         super(props);
         this.state = {books: []};
     }
     componentDidMount(){
-        axios.post('http://localhost:4000/users/reserved_books', {token:localStorage.usertoken})
+        axios.post('http://localhost:4000/users/all_reserved_books', {token:localStorage.usertoken})
             .then(response=>{
                 this.setState({books: response.data})
             })
@@ -40,7 +61,7 @@ export default class ReservedBooks extends Component{
             });
     }
     componentDidUpdate(){
-        axios.post('http://localhost:4000/users/reserved_books',{token:localStorage.usertoken})
+        axios.post('http://localhost:4000/users/all_reserved_books',{token:localStorage.usertoken})
             .then(response=>{
                 this.setState({books: response.data})
             })
@@ -62,6 +83,7 @@ export default class ReservedBooks extends Component{
                     <thead className="thead-dark">
                     <tr>
                         <th>Book ID</th>
+                        <th>Student ID</th>
                         <th>Reserved Date</th>
                         <th></th>
                     </tr>
