@@ -224,6 +224,37 @@ routes.route('/issue').post(function (req, res) {
     })
 });
 
+routes.route('/cancel').post(function (req, res) {
+    var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+    User.findOne({
+        user_id: decoded.user_id
+    }).then(user=>{
+        if(user){
+            ReservedBooks.deleteOne({
+                    book_id: req.body.book_id
+                },
+                function (err, obj) {
+                    if(err){
+                        console.log(err)
+                    }else{
+                        Book.findById(req.body.ref_id, function (err, bk) {
+                            if (bk) {
+                                bk.book_availability = true;
+                                bk.save().then(()=>{
+                                    res.send("Cancelled successfully..")
+                                }).catch(err=>{
+                                    res.send(err)
+                                });
+                            }else{
+                                res.send('Book does not exist..')
+                            }
+                        });
+                    }
+                })
+        }
+    })
+});
+
 routes.route('/all_issued_books').post(function (req, res) {
     var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
     User.find({
@@ -243,6 +274,58 @@ routes.route('/all_issued_books').post(function (req, res) {
         .catch(err=>{
             console.log(err)
         })
+});
+
+routes.route('/return').post(function (req, res) {
+    var decoded = jwt.verify(req.body.token, process.env.SECRET_KEY);
+    User.findOne({
+        user_id: decoded.user_id
+    }).then(user=>{
+        if(user){
+            IssedBooks.deleteOne({
+                    book_id: req.body.book_id
+                },
+                function (err, obj) {
+                    if(err){
+                        console.log(err)
+                    }else{
+                        var time = new Date(req.body.expected_return_date) - new Date();
+                        var days = time / (1000 * 3600 * 24);
+                        var fines = days>0 ? Math.floor(days)*5 : 0;
+                        var description = days>0 ? 'Late '+Math.floor(days)+' to return the book': '';
+                        let his = new History({
+                            user_id: req.body.user_id,
+                            book_id: req.body.book_id,
+                            borrowed_date: new Date(req.body.issued_date),
+                            expected_return_date: new Date(req.body.expected_return_date),
+                            returned_date: new Date(),
+                            fines: fines,
+                            description: description
+                        });
+                        his.save()
+                            .then(() => {
+                                Book.findById(req.body.ref_id, function (err, bk) {
+                                    if (bk) {
+                                        bk.book_availability = true;
+                                        bk.save()
+                                            .then(()=>{
+                                                res.send('Returned successfully...');
+                                            })
+                                            .catch(err=>{
+                                                res.send(err)
+                                            });
+                                    }
+                                });
+                            })
+                            .catch(err=>{
+                                res.send(err);
+                            });
+                    }
+                })
+        }else{
+            res.send('You have not signed into the system..')
+        }
+    })
 });
 
 module.exports = routes;

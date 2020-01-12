@@ -11,7 +11,9 @@ const Book = props => (
             <button onClick={()=>{
                 issue(props.book.user_id, props.book.book_id, props.book.ref_id)
             }} type="button" className="btn btn-outline-success">Issue</button> &nbsp;
-            <button type="button" className="btn btn-outline-danger">Cancel</button>
+            <button onClick={()=>{
+                cancel(props.book.book_id, props.book.ref_id)
+            }} type="button" className="btn btn-outline-danger">Cancel</button>
         </td>
     </tr>
 );
@@ -45,7 +47,19 @@ function issue(user_id, book_id, ref_id){
             alert(error)
         });
 }
-
+function cancel(book_id, ref_id){
+    axios.post('http://localhost:4000/users/cancel', {
+        token:localStorage.usertoken,
+        book_id: book_id,
+        ref_id: ref_id
+    })
+        .then(response=>{
+            alert(response.data)
+        })
+        .catch(function (error) {
+            alert(error)
+        });
+}
 export default class AllReservedBooks extends Component{
     constructor(props){
         super(props);

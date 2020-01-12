@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let History = new Schema({
-    stu_id: {
+    user_id: {
         type: String
     },
     book_id: {

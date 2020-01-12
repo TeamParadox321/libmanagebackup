@@ -99,7 +99,7 @@ class App extends Component{
                                 <li className="active">
                                     <Link to="/books"><span className="fa fa-trophy mr-3"></span> Books </Link>
                                 </li>
-                                {localStorage.usertoken!=null ? <li className="active">
+                                {localStorage.userrole=='librarian'||localStorage.userrolr=='admin' ? <li className="active">
                                     <Link to="/students"><span className="fa fa-gift mr-3"></span> Students </Link>
                                 </li> : '' }
                                 {localStorage.usertoken==null ? (<wrapper>
