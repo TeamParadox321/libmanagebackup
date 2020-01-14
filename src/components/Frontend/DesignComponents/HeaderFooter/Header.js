@@ -5,8 +5,6 @@ function Header(props) {
         <header>
             <div>
                 <nav className="navb navbar navbar-expand-md navbar-dark">
-                    <button type="button" id="sidebarCollapse" className="btn btn-primary">
-                    </button>
                     <div className={"navbar-brand spacer"}></div>
                     <Link to={"/"} className={""}> <h2 className={"header-text"}>Library Management System </h2> </Link>
                     <div className={"navbar-brand spacer"}></div>

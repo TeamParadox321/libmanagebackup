@@ -47,31 +47,25 @@ export default class Profile extends Component{
         return (
             <div className="container">
                 <br/><br/><br/>
-                <h2>{this.state.user_role}</h2>
-                <div className="text-center">
-                    <a href="#myModal" className="trigger-btn" data-toggle="modal">Click to Open Confirm Modal</a>
-                </div>
-
-                <div id="myModal" className="modal">
-                    <div className="modal-dialog modal-confirm">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <div className="icon-box">
-                                    <i className="material-icons">&#xE876;</i>
-                                </div>
-                                <h4 className="modal-title">Awesome!</h4>
-                            </div>
-                            <div className="modal-body">
-                                <p className="text-center">Your booking has been confirmed. Check your email for
-                                    detials.</p>
-                            </div>
-                            <div className="modal-footer">
-                                <button className="btn btn-success btn-block" data-dismiss="modal">OK</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <center>
+                    <h2>{this.state.user_id}</h2>
+                    <table style={{"max-width":"500px", "min-width":"300px", "font-size": "20px"}}>
+                        <tr>
+                            <td>Name : </td>
+                            <td>&nbsp;</td>
+                            <td>{this.state.user_name}</td>
+                        </tr>
+                        <tr>
+                            <td>Email : </td>
+                            <td>&nbsp;</td>
+                            <td>{this.state.user_email}</td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number :</td>
+                            <td>&nbsp;</td>
+                            <td>{this.state.user_phone_number}</td>
+                        </tr>
+                    </table> </center>
             </div>
         )
     }

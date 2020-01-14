@@ -95,41 +95,50 @@ export default class AddBooks extends Component{
 
     render() {
         return(
-            <div className="login-form modal-content bg-dark">
+            <div className="login-form">
+                <div className={"frm"}>
+                    <button type="button" className="close " data-dismiss="modal" style={{"padding-right": "10px", "color": "white"}}><i className="fa fa-close"/></button>
+                    <center><h2 className="text-light"> Add Book </h2></center>
+                </div>
                 <form className={""} onSubmit={this.onSubmit}>
-                    <button type="button" className="close " data-dismiss="modal"><img height={"20px"} width={"30px"} src={Close}/></button>
-                    <h2 className="text-center text-light"> Add Books </h2>
-                    <br/>
                     <div className="form-group">
+                        <p className={"txt"}>Book Id :</p>
                         <input type="text" className="form-control" placeholder="Book ID" required="required"
                                 value={this.state.book_id} onChange={this.onChangeBookId}/>
                     </div>
                     <div className="form-group">
+                        <p className={"txt"}>Book ISBN :</p>
                         <input type="text" className="form-control" placeholder="Book ISBN" required="required"
                                value={this.state.book_isbn} onChange={this.onChangeBookIsbn}/>
                     </div>
                     <div className="form-group">
+                        <p className={"txt"}>Book Title :</p>
                         <input type="text" className="form-control" placeholder="Book Title" required="required"
                                value={this.state.book_title} onChange={this.onChangeBookTitle}/>
                     </div>
                     <div className="form-group">
+                        <p className={"txt"}>Book Edition :</p>
                         <input type="text" className="form-control" placeholder="Book Edition"
                                value={this.state.book_edition} onChange={this.onChangeBookEdition}/>
                     </div>
                     <div className="form-group">
+                        <p className={"txt"}>Category :</p>
                         <input type="text" className="form-control" placeholder="Category"
                                value={this.state.book_category} onChange={this.onChangeBookCategory}/>
                     </div>
                     <div className="form-group">
+                        <p className={"txt"}>Author :</p>
                         <input type="text" className="form-control" placeholder="Author"
                                value={this.state.book_author} onChange={this.onChangeBookAuthor}/>
                     </div>
                     <div className="form-group">
+                        <p className={"txt"}>Published Year :</p>
                         <input type="text" className="form-control" placeholder="Published Year"
                                value={this.state.book_year} onChange={this.onChangeBookYear}/>
                     </div>
+                    <br/>
                     <div className="form-group">
-                        <button type="submit" className="btn btn-primary btn-block">Add Book</button>
+                        <button type="submit" className={"btn btn-primary btn-block"} style={{"background": "#400000"}}>Add Book</button>
                     </div>
                 </form>
             </div>

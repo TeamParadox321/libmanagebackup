@@ -76,7 +76,7 @@ export default class Profile extends Component{
                         <td>{this.state._id}</td>
                     </tr>
                 </table>
-                    {(localStorage.userrole='student'&&this.state.book_availability=='true') ? <button onClick={()=>{
+                    {(localStorage.userrole=='student'&&this.state.book_availability=='true') ? <button onClick={()=>{
                         axios.post('http://localhost:4000/users/reserve', {
                             token: localStorage.usertoken, book_id: this.state.book_id, ref_id: this.state._id
                         })

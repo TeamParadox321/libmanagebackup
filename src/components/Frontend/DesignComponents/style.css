@@ -18,7 +18,7 @@ header{
     color: white;
 }
 body{
-    background-color: white;
+    background-color: #ededed;
     min-width: 350px;
 }
 .navb{
@@ -50,12 +50,6 @@ body{
 #h{
     height: 100px;
     background-color: white;
-}
-.section{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    min-height: 650px;
-    background: #fff5e1;
 }
 #h-btn{
     padding-top: 5px;
@@ -106,7 +100,6 @@ body{
 .form-control, .btn {
     min-height: 38px;
     border-radius: 45px;
-    background: white;
 }
 .btn {
     font-size: 15px;

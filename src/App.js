@@ -9,7 +9,6 @@ import Footer from "./components/Frontend/DesignComponents/HeaderFooter/Footer";
 import UserLogin from "./components/Frontend/UserComponents/UserLogin";
 import Signup from "./components/Frontend/UserComponents/Signup";
 import InventoryBooks from "./components/Frontend/AdminComponents/InventoryBooks";
-import Notfound from "./components/Frontend/DesignComponents/NotFoundComponent/Notfound";
 import Users from "./components/Frontend/AdminComponents/Users";
 import User from "./components/Frontend/DesignComponents/HeaderFooter/user.png"
 import Books from "./components/Frontend/UserComponents/Books";
@@ -21,6 +20,7 @@ import ReservedBooks from "./components/Frontend/UserComponents/ReservedBooks";
 import AllReservedBooks from "./components/Frontend/AdminComponents/AllReservedBooks";
 import AllIssuedBooks from "./components/Frontend/AdminComponents/AllIssuedBooks";
 
+const serverURL = 'http://localhost:4000';
 
 class App extends Component{
     constructor(props){
@@ -28,7 +28,7 @@ class App extends Component{
         this.nullState = this.nullState.bind(this);
         this.fullState = this.fullState.bind(this);
         if(localStorage.usertoken!=null) {
-            axios.post('http://localhost:4000/users/check', {
+            axios.post(serverURL+'/users/check', {
                 token: localStorage.usertoken
             })
                 .then(response => {
@@ -78,8 +78,8 @@ class App extends Component{
         return (
             <Router>
                 <switch>
-                    <Header/>
-                    <div className="wrapper d-flex align-items-stretch">
+                    <Header serverURL={serverURL}/>
+                    <div className="d-flex">
                         <nav id="sidebar">
                             <div className="custom-menu">
                             </div>
@@ -119,25 +119,25 @@ class App extends Component{
                                     }><span className="fa fa-sign-out mr-3"> </span> Sign Out</a>
                                 </li>) : ''}
                                 <button onClick={()=>{
-                                    alert(localStorage.userrole+'  '+this.state.token);
+                                    alert(localStorage.userrole+' nnnn '+this.state.token);
                                 }}> check </button>
                             </ul>
 
                         </nav>
 
-                        <div id="content" className="">
+                        <div id="content" className="" style={{"min-height": "710px"}}>
 
-                            <Route path={"/"} exact={""} component={Home}/>
-                            <Route path={"/all_books"} component={AllBooks}/>
-                            <Route path={"/book/:id"} component={Book}/>
-                            <Route path={"/books"} component={Books}/>
+                            <Route path={"/"} exact={""} component={Home} serverURL={serverURL}/>
+                            <Route path={"/all_books"} component={AllBooks} serverURL={serverURL}/>
+                            <Route path={"/book/:id"} component={Book} serverURL={serverURL}/>
+                            <Route path={"/books"} component={Books} serverURL={serverURL}/>
                             {localStorage.usertoken!=null ? <wrapper>
-                                <Route path={"/profile"} component={Profile}/>
-                                <Route path={"/students"} component={Users}/>
-                                <Route path={"/inventory_books"} component={InventoryBooks}/>
-                                <Route path={"/reserved_books"} component={ReservedBooks}/>
-                                <Route path={"/all_reserved_books"} component={AllReservedBooks}/>
-                                <Route path={"/all_issued_books"} component={AllIssuedBooks}/>
+                                <Route path={"/profile"} component={Profile} serverURL={serverURL}/>
+                                <Route path={"/students"} component={Users} serverURL={serverURL}/>
+                                <Route path={"/inventory_books"} component={InventoryBooks} serverURL={serverURL}/>
+                                <Route path={"/reserved_books"} component={ReservedBooks} serverURL={serverURL}/>
+                                <Route path={"/all_reserved_books"} component={AllReservedBooks} serverURL={serverURL}/>
+                                <Route path={"/all_issued_books"} component={AllIssuedBooks} serverURL={serverURL}/>
                                 </wrapper> : '' }
 
                         </div>
@@ -145,18 +145,18 @@ class App extends Component{
                     <div className="container">
                         <div className="modal close" id="signUp" data-dismiss="modal">
                             <div>
-                                <Signup/>
+                                <Signup serverURL={serverURL}/>
                             </div>
                         </div>
                     </div>
                     <div className="container">
                         <div className="modal close" id="signIn" data-dismiss="modal">
                             <div>
-                                <UserLogin fs={this.fullState}/>
+                                <UserLogin fs={this.fullState} serverURL={serverURL}/>
                             </div>
                         </div>
                     </div>
-                    <Footer/>
+                    <Footer serverURL={serverURL}/>
                 </switch>
             </Router>
         );
