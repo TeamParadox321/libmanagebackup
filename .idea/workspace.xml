@@ -566,10 +566,10 @@
     </state>
     <state x="456" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578808054349" />
     <state x="439" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575989082908" />
-    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1579011936046">
+    <state x="217" y="0" width="926" height="741" key="CommitChangelistDialog2" timestamp="1579012062282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579011936046" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579012062282" />
     <state x="233" y="27" width="926" height="741" key="CommitChangelistDialog2/47.27.1319.741@47.27.1319.741" timestamp="1576231822670" />
     <state x="525" y="171" key="FileChooserDialogImpl" timestamp="1578631246894">
       <screen x="0" y="0" width="1536" height="824" />
@@ -599,18 +599,19 @@
     </state>
     <state width="1515" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578989295759" />
     <state width="1296" height="175" key="GridCell.Tab.0.right/47.27.1319.741@47.27.1319.741" timestamp="1575660975021" />
-    <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1575777069683">
-      <screen x="47" y="27" width="1319" height="741" />
+    <state x="424" y="97" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1579012033807">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="424" y="97" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1579012033807" />
     <state x="411" y="114" width="580" height="564" key="MultipleFileMergeDialog/47.27.1319.741@47.27.1319.741" timestamp="1575777069683" />
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog" timestamp="1575647113078">
       <screen x="47" y="27" width="1319" height="741" />
     </state>
     <state x="411" y="121" width="581" height="550" key="RollbackChangesDialog/47.27.1319.741@47.27.1319.741" timestamp="1575647113078" />
-    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579011834362">
+    <state x="296" y="117" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579012004573">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579011834362" />
+    <state x="296" y="117" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579012004573" />
     <state x="301" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/47.27.1319.741@47.27.1319.741" timestamp="1576231825179" />
     <state x="497" y="321" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576409831336">
       <screen x="0" y="0" width="1536" height="824" />
