@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AddBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/AddBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AllIssuedBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/AllIssuedBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/AllReservedBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/AllReservedBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Dashboards/simple-sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/Dashboards/simple-sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/InventoryBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/InventoryBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/UpdateBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/UpdateStudents.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/UpdateStudents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/AdminComponents/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/AdminComponents/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/HeaderFooter/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/HeaderFooter/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/HeaderFooter/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/HeaderFooter/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/NotFoundComponent/Notfound.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/NotFoundComponent/Notfound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/i1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/i1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/i2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/i2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/i3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/i3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/DesignComponents/uoklogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/DesignComponents/uoklogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/AllBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/UserComponents/AllBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/UserComponents/Book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Books.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/UserComponents/Books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/ReservedBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/UserComponents/ReservedBooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/UserComponents/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Frontend/UserComponents/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Frontend/UserComponents/UserLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/serviceWorker.js" afterDir="false" />
-    </list>
+    <list default="true" id="2085d010-12e9-4633-8b06-8a9ad1f5faea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +60,18 @@
       <recent name="$PROJECT_DIR$/src/components/Frontend/AdminComponents" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -113,18 +86,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
